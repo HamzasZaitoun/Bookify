@@ -16,8 +16,16 @@ loginBtn.addEventListener('click', () => {
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
 
-    
-    if (name && email && password) {
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    if (!validatePassword(password)) {
+         return alert('Password must be at least 8 characters long, contain one uppercase letter, one number, and one special character.');
+    }
+
+    if (name && validateEmail(email) && validatePassword(password)) {
         localStorage.setItem('userName', name);
         localStorage.setItem('userEmail', email);
         localStorage.setItem('userPassword', password);
@@ -40,3 +48,13 @@ document.getElementById('signin-btn').addEventListener('click', function () {
         alert('Invalid email or password.');
     }
 });
+
+function validateEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+}
+
+function validatePassword(password) {
+    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z]{8,16}$/;
+    return passwordPattern.test(password);
+}
