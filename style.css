@@ -403,7 +403,7 @@ img {
 }
 
 /* image align */
-figure.align-right {
+figure .align-right {
   margin: 30px 0 30px 30px;
 }
 
@@ -2368,7 +2368,7 @@ footer#footer {
   margin-bottom: 20px;
 }
 
-.product-style img.product-item {
+.product-style img .product-item {
   position: relative;
   background: #EFEEE8;
   border: 1px solid #EAE8DF;
@@ -2396,6 +2396,7 @@ footer#footer {
 .product-style:hover button.add-to-cart {
   bottom: 380px;
   bottom: 0;
+    
 }
 
 .product-item figcaption {
@@ -2424,12 +2425,11 @@ footer#footer {
     width: 45%;
   }
 
-  .product-style img.product-item {
+  .product-style img .product-item {
     /*height: 550px;*/
     object-fit: contain;
     margin: 0 auto;
   }
-
   .products-grid.col-3 .product-style,
   .products-grid.col-4 .product-style,
   .products-grid.col-5 .product-style {
@@ -2442,3 +2442,59 @@ footer#footer {
     width: 100%;
   }
 }
+
+  /********************* MY ADDS ******************* */
+  .product-item {
+    margin-bottom: 20px;
+}
+
+
+.product-style img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.prev-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+figcaption {
+    padding: 10px 0;
+}
+@media (max-width: 992px) {
+  .col-2 {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-2 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+/* ****************END OF MY ADDS********************** */

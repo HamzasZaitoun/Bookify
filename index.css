@@ -1,3 +1,4 @@
+
 .modal {
     display: none; 
     position: fixed; 
@@ -10,7 +11,15 @@
     justify-content: center;
     align-items: center;
 }
-
+.pop,.wish
+{
+    margin-top: 25%;
+    border-radius: 5%;
+}
+.pop:hover
+{
+    background-color: rgb(100, 44, 22);
+}
 .modal-content {
     background-color: #fff;
     padding: 20px;
@@ -30,23 +39,55 @@
 }
 
 .modal-img {
-    max-width: 50%;
-    height: auto;
+    width: 70%;
+    height: 70%;
+    filter: drop-shadow(0 0 1fr gray);
 }
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 10px; /* Space between cells */
+    gap: 5px; /* Space between cells */
     width: 100%; /* Full width */
     height: 100vh; /* Full height of viewport */
 }
 .grid-item {
-    display: flex;
+    padding-top: 30%;
+    display: inline-block;
     flex-direction: column;
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
     font-size: 24px; /* Larger font size */
 }
 
+.product-style img .product-itemf {
+    position: relative;
+    background: #EFEEE8;
+    border: 1px solid #EAE8DF;
+    padding: 15%;
+    cursor: pointer;
+    width: 100%;
+  }
 
-
+  .product-itemf figcaption {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .product-itemf figcaption>h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #74642F;
+    margin: 0;
+  }
+  .product-itemf figcaption>p {
+    margin: 0;
+  }
+  
+  .product-itemf .item-price {
+    color: #74642F;
+    font-size: 1.3em;
+  }
+  .product-itemf
+  {
+    cursor: pointer;
+  }
