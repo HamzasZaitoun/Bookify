@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Bookify</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f3f2ec;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .about-section,
+      .mission-section,
+      .team-section {
+        padding: 60px 0;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      .about-section p,
+      .mission-section p {
+        margin-bottom: 20px;
+      }
+
+      /* Animations */
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Team Styling */
+      .team-card {
+        background-color: #edebe4;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .team-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .team-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .team-body {
+        padding: 15px;
+      }
+
+      .team-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .team-role {
+        font-size: 1rem;
+        color: #777;
+      }
+
+      .container {
+        max-width: 1140px;
+      }
+
+      /* Mission section in secondary color */
+      .mission-section {
+        background-color: #edebe4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- About Bookify Section -->
+    <section class="about-section fade-in">
+      <div class="container text-center">
+        <h2>About Bookify</h2>
+        <p>
+          Welcome to Bookify, your ultimate destination for all things books. We
+          bring you an extensive collection of both modern and classic titles,
+          catering to readers of every age and interest. At Bookify, we believe
+          in the power of stories and the endless possibilities that books
+          offer. We aim to create a community where everyone can find their next
+          great read.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="mission-section fade-in">
+      <div class="container text-center">
+        <h2>Our Mission</h2>
+        <p>
+          At Bookify, our mission is simple: To ignite a passion for reading and
+          make books accessible to everyone. We believe in fostering a love for
+          literature and connecting people to the books that can change their
+          lives. Through our seamless shopping experience, curated collections,
+          and engaging community, we aim to enhance the joy of reading for all.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team-section fade-in">
+      <div class="container text-center">
+        <h2>Our Team</h2>
+        <div class="row justify-content-center">
+          <!-- Team Member 1 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="team-card">
+              <img
+                src="https://via.placeholder.com/300x250"
+                class="team-img"
+                alt="Hamza Zaitoon"
+              />
+              <div class="team-body">
+                <h5 class="team-title">Hamza Zaitoon</h5>
+                <p class="team-role">CEO & Founder</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="team-card">
+              <img
+                src="https://via.placeholder.com/300x250"
+                class="team-img"
+                alt="Hamza Zamil"
+              />
+              <div class="team-body">
+                <h5 class="team-title">Hamza Zamil</h5>
+                <p class="team-role">CTO & Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="team-card">
+              <img
+                src="https://via.placeholder.com/300x250"
+                class="team-img"
+                alt="Zaid Ayoub"
+              />
+              <div class="team-body">
+                <h5 class="team-title">Zaid Ayoub</h5>
+                <p class="team-role">Marketing Specialist</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="team-card">
+              <img
+                src="https://via.placeholder.com/300x250"
+                class="team-img"
+                alt="Asmaa Marrar"
+              />
+              <div class="team-body">
+                <h5 class="team-title">Asmaa Marrar</h5>
+                <p class="team-role">Content Manager</p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 5 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="team-card">
+              <img
+                src="https://via.placeholder.com/300x250"
+                class="team-img"
+                alt="Razan Alhroub"
+              />
+              <div class="team-body">
+                <h5 class="team-title">Razan Alhroub</h5>
+                <p class="team-role">Customer Relations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
