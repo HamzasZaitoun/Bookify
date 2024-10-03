@@ -22,10 +22,10 @@ loginBtn.addEventListener('click', () => {
     }
 
     if (!validatePassword(password)) {
-         return alert('Password must be at least 8 characters long, contain one uppercase letter, one number, and one special character.');
+        alert('Password must be at least 8 characters long, contain one uppercase letter, one number, and one special character.');
     }
 
-    if (name && validateEmail(email) && validatePassword(password)) {
+    if (name && email && password) {
         localStorage.setItem('userName', name);
         localStorage.setItem('userEmail', email);
         localStorage.setItem('userPassword', password);
@@ -33,6 +33,8 @@ loginBtn.addEventListener('click', () => {
     } else {
         alert('Please fill in all fields.');
     }
+
+
 });
 
 document.getElementById('signin-btn').addEventListener('click', function () {
@@ -55,6 +57,6 @@ function validateEmail(email) {
 }
 
 function validatePassword(password) {
-    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z]{8,16}$/;
+    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z]{8,}$/;
     return passwordPattern.test(password);
 }
