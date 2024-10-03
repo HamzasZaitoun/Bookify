@@ -28,6 +28,12 @@ Version: 1.1
     --header-height-min: 80px;
   }
 }
+.books-image-height{
+  height: 380px;
+  border-radius: 2rem;
+  border: 2px solid #F3F2EC;
+}
+
 
 /* Theme Colors */
 :root {

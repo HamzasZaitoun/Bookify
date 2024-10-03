@@ -1,1241 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bookify</title>
-    <!-- <link rel="icon" type="image/x-icon" href="/images/bookify-favicon-color.svg"> -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="author" content="" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css" />
-    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <style>
-      html {
-        scroll-behavior: smooth !important;
-      }
-    </style>
-  </head>
+<head>
+	
+	<title> Bookify</title>
+	<!-- <link rel="icon" type="image/x-icon" href="/images/bookify-favicon-color.svg"> -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+     
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="index.css">	
+	<style>html{
+		scroll-behavior: smooth !important;
+	  }
+    </style>	
+</head>
 
-  <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
-    <div id="header-wrap">
-      <div class="top-content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-              <div class="right-element">
-                <a
-                  href="ZaidAyoub/registeration/register.html"
-                  class="user-account for-buy"
-                  ><i class="icon icon-user"></i><span>Account</span></a
-                >
-                <a href="cart.html" class="cart for-buy"
-                  ><i class="icon icon-clipboard"></i><span>Cart</span></a
-                >
+<body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-                <div class="action-menu">
-                  <div class="search-bar">
-                    <a
-                      href="#"
-                      class="search-button search-toggle"
-                      data-selector="#header-wrap"
-                    >
-                      <i class="icon icon-search"></i>
-                    </a>
-                    <form role="search" method="get" class="search-box">
-                      <input
-                        class="search-field text search-input"
-                        placeholder="Search"
-                        type="search"
-                      />
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <!--top-right-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--top-content-->
+	<div id="header-wrap">
 
-      <header id="header">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-2">
-              <div class="main-logo">
-                <a href="index.html"
-                  ><img src="images/main-logo.png" alt="logo"
-                /></a>
-              </div>
-            </div>
+		<div class="top-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						
+						
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a href="ZaidAyoub/registeration/register.html" class="user-account for-buy"><i
+									class="icon icon-user"></i><span>Account</span></a>
+							<a href="cart.html" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart</span></a>
 
-            <div class="col-md-10">
-              <nav id="navbar">
-                <div class="main-menu stellarnav">
-                  <ul class="menu-list">
-                    <li class="menu-item active">
-                      <a href="#billboard">Home</a>
-                    </li>
+							<div class="action-menu">
 
-                    <li class="menu-item">
-                      <a href="#featured-books" class="nav-link">Top</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#popular-books" class="nav-link">Popular</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#special-offer" class="nav-link">Offer</a>
-                    </li>
-                    <li class="menu-item has-sub pr-5">
-                      <a href="#pages" class="nav-link">Pages</a>
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
+									</form>
+								</div>
+							</div>
 
-                      <ul>
-                        <li>
-                          <a href="./hamzaZamil/AboutUs/index.html">About us</a>
-                        </li>
+						</div><!--top-right-->
+					</div>
 
-                        <li><a href="./hamzaZamil/FAQ/faq.html">FAQ</a></li>
+				</div>
+			</div>
+		</div><!--top-content-->
 
-                        <li>
-                          <a href="./hamzaZamil/contactUs/contactUs.html"
-                            >Contact us</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
 
-                  <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-    <!--header-wrap-->
+					<div class="col-md-2">
+						<div class="main-logo">
+							<a href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+						</div>
 
-    <section id="billboard">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <button class="prev slick-arrow">
-              <i class="icon icon-arrow-left"></i>
-            </button>
+					</div>
 
-            <div class="main-slider pattern-overlay">
-              <div class="slider-item">
-                <div class="banner-content">
-                  <h2 class="banner-title">Life of the Wild</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    eu feugiat amet, libero ipsum enim pharetra hac. Urna
-                    commodo, lacus ut magna velit eleifend. Amet, quis urna, a
-                    eu.
-                  </p>
-                  <div class="btn-wrap">
-                    <a href="#" class="btn btn-outline-accent btn-accent-arrow"
-                      >Read More<i class="icon icon-ns-arrow-right"></i
-                    ></a>
-                  </div>
-                </div>
-                <!--banner-content-->
-                <img
-                  src="images/main-banner1.jpg"
-                  alt="banner"
-                  class="banner-image"
-                />
-              </div>
-              <!--slider-item-->
+					<div class="col-md-10">
 
-              <div class="slider-item">
-                <div class="banner-content">
-                  <h2 class="banner-title">Birds gonna be Happy</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    eu feugiat amet, libero ipsum enim pharetra hac. Urna
-                    commodo, lacus ut magna velit eleifend. Amet, quis urna, a
-                    eu.
-                  </p>
-                  <div class="btn-wrap">
-                    <a href="#" class="btn btn-outline-accent btn-accent-arrow"
-                      >Read More<i class="icon icon-ns-arrow-right"></i
-                    ></a>
-                  </div>
-                </div>
-                <!--banner-content-->
-                <img
-                  src="images/main-banner2.jpg"
-                  alt="banner"
-                  class="banner-image"
-                />
-              </div>
-              <!--slider-item-->
-            </div>
-            <!--slider-->
+						<nav id="navbar">
+							<div class="main-menu stellarnav">
+								<ul class="menu-list">
+									<li class="menu-item active"><a href="#billboard">Home</a></li>
+									
+									<li class="menu-item"><a href="#featured-books" class="nav-link">Top</a></li>
+									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
+									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
+									<li class="menu-item has-sub pr-5">
+										<a href="#pages" class="nav-link">Pages</a>
 
-            <button class="next slick-arrow">
-              <i class="icon icon-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+										<ul>
+											<li><a href="hamzaZamil/aboutUs.html">About us</a></li>
+											
+											
+											
+											<li><a href="#footer">Our Store</a></li>
+											
+											<li><a href="hamzaZamil/contactUs.html">Contact us</a></li>
+											
+										</ul>
 
-    <!-- START OF  BOOKS SECTION  -->
-    <section id="featured-books" class="py-5 my-5">
-      <div class="container">
-        <div id="top-books" class="row">
-          <div class="col-md-12 top-book">
-            <div class="section-header align-center">
-              <h2 class="section-title">Top Books</h2>
-            </div>
+									</li>
+									
+								</ul>
 
-            <div class="product-list" data-aos="fade-up">
-              <div id="top-books" class="row"></div>
-            </div>
-            <!-- ft-books-slider -->
-          </div>
-          <!-- grid -->
-        </div>
-        <!-- inner-content -->
+								<div class="hamburger">
+									<span class="bar"></span>
+									<span class="bar"></span>
+									<span class="bar"></span>
+								</div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="btn-wrap align-right">
-              <a href="#popular-books" class="btn-accent-arrow"
-                >View all Books <i class="icon icon-ns-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+							</div>
+						</nav>
 
-    <!-- Modal Structure -->
-    <div id="productModal" class="modal">
-      <div class="modal-content">
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+	</div><!--header-wrap-->
+
+	<section id="billboard">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<button class="prev slick-arrow">
+						<i class="icon icon-arrow-left"></i>
+					</button>
+
+					<div class="main-slider pattern-overlay">
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Life of the Wild</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+									urna, a eu.</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/main-banner1.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
+
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Birds gonna be Happy</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+									urna, a eu.</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/main-banner2.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
+
+					</div><!--slider-->
+
+					<button class="next slick-arrow">
+						<i class="icon icon-arrow-right"></i>
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- START OF  BOOKS SECTION  -->
+	<section id="featured-books" class="py-5 my-5">
+		<div class="container">
+			<div id="top-books" class="row">
+				<div class="col-md-12 top-book">
+					<div class="section-header align-center">
+						<h2 class="section-title">Top Books</h2>
+					</div>
+	
+					<div class="product-list" data-aos="fade-up">
+						<div id="top-books" class="row">
+							
+	
+							
+						</div>
+					</div><!-- ft-books-slider -->
+				</div><!-- grid -->
+			</div><!-- inner-content -->
+		</div>
+	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="btn-wrap align-right">
+						<a href="#popular-books" class="btn-accent-arrow">View more Books <i class="icon icon-ns-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!-- Modal Structure -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
         <div class="grid-container">
-          <div class="grid-item">
-            <img id="modalImage" src="" alt="Product Image" class="modal-img" />
-          </div>
-          <div class="grid-item">
-            <span class="close">&times;</span>
-            <h3 id="modalTitle"></h3>
-            <p id="modalAuthor"></p>
-            <div class="modal-price"></div>
-            <button type="button" class="add-to-cart-modal pop">
-              Add to Cart
-            </button>
-            <button type="button" class="pop wish">
-              <i class="bi bi-suit-heart"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END OF THE SECTION -->
-    <section id="best-selling" class="leaf-pattern-overlay">
-      <div class="corner-pattern-overlay">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-6">
-                  <figure class="products-thumb">
-                    <img
-                      id="bookImage"
-                      src="AsmaMarar/imagesB/4.jpg"
-                      alt="book"
-                      class="single-image"
-                    />
-                    <!-- Fixed the image path -->
-                  </figure>
-                </div>
-                <div class="col-md-6">
-                  <div class="product-entry">
-                    <h2 class="section-title divider" id="titleH2"></h2>
-                    <div class="products-content">
-                      <div class="author-name" id="author-name"></div>
-                      <p id="main-description"></p>
-                      <div class="item-price" id="price"></div>
-                      <div class="btn-wrap">
-                        <a href="#" class="btn-accent-arrow"
-                          >shop it now <i class="icon icon-ns-arrow-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- / row -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+			<div class="grid-item"><img id="modalImage" src="" alt="Product Image" class="modal-img"></div>
+			<div class="grid-item">
+			<span class="close">&times;</span>
+			<h3 id="modalTitle"></h3>
+			<p id="modalAuthor"></p>
+			<div class="modal-price"></div>
+			<button type="button" class="add-to-cart-modal pop">Add to Cart</button>
+			<button type="button" class="pop  wish"><i class="bi bi-suit-heart"></i></button>
+			</div>
+		</div>    </div>
+</div>
+<!-- END OF THE SECTION -->
+	 <section id="best-selling" class="leaf-pattern-overlay">
+		<div class="corner-pattern-overlay">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-6">
+								<figure class="products-thumb">
+									<img id="bookImage" src="AsmaMarar/imagesB/4.jpg" alt="book" class="single-image"> <!-- Fixed the image path -->
+								</figure>
+							</div>
+							<div class="col-md-6">
+								<div class="product-entry">
+									<h2 class="section-title divider" id="titleH2"></h2>
+									<div class="products-content">
+										<div class="author-name" id="author-name"></div>
+										<p id="main-description"></p>
+										<div class="item-price" id="price"></div>
+										<div class="btn-wrap">
+											<a href="#" class="btn-accent-arrow">shop it now <i class="icon icon-ns-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- / row -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
 
-    <section id="popular-books" class="bookshelf py-5 my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header align-center">
-              <h2 class="section-title">Popular Books</h2>
-            </div>
+	<section id="popular-books" class="bookshelf py-5 my-5">
+		<div class="container" >
+			<div class="row" >
+				<div class="col-md-12">
 
-            <ul class="tabs">
-              <li data-tab-target="#all-genre" class="active tab">All Genre</li>
-              <li data-tab-target="#business" class="tab">Business</li>
-              <li data-tab-target="#technology" class="tab">Technology</li>
-              <li data-tab-target="#romantic" class="tab">Romantic</li>
-              <li data-tab-target="#adventure" class="tab">Adventure</li>
-              <li data-tab-target="#fictional" class="tab">Fiction</li>
-            </ul>
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Some quality items</span>
+						</div>
+						<h2 class="section-title">Popular Books</h2>
+					</div>
 
-            <div class="tab-content">
-              <div id="all-genre" data-tab-content class="active">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item1.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Portrait photography</h3>
-                        <span>Adam Silber</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+					<ul class="tabs">
+						<li data-tab-target="#all-genre" class="active tab">All Genre</li>
+						<li data-tab-target="#business" class="tab">Dystopian</li>
+						<li data-tab-target="#technology" class="tab">Classic</li>
+						<li data-tab-target="#romantic" class="tab">romance</li>
+						<li data-tab-target="#adventure" class="tab">fantasy</li>
+						<li data-tab-target="#fictional" class="tab">Fiction</li>
+					</ul>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item2.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Once upon a time</h3>
-                        <span>Klien Marry</span>
-                        <div class="item-price">$ 35.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+					<div class="tab-content">
+						<div id="all-genre" data-tab-content class="active">
+							<div class="row" id="popular-books-all">
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item3.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Tips of simple lifestyle</h3>
-                        <span>Bratt Smith</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+							</div>
+						</div>
+						
+						<div id="business" data-tab-content>
+							<div class="row" id="popular-books-business">
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item4.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Just felt from outside</h3>
-                        <span>Nicole Wilson</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item5.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Peaceful Enlightment</h3>
-                        <span>Marmik Lama</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+							</div>
+						</div>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item6.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Great travel at desert</h3>
-                        <span>Sanchit Howdy</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+						<div id="technology" data-tab-content>
+							<div class="row" id="popular-books-Classic">
+								
+							</div>
+						</div>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item7.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Life among the pirates</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+						<div id="romantic" data-tab-content>
+							<div class="row" id="popular-books-Romance">
+								
+							</div>
+						</div>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item8.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Simple way of piece life</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="business" data-tab-content>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item2.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Peaceful Enlightment</h3>
-                        <span>Marmik Lama</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+						<div id="adventure" data-tab-content>
+							<div class="row" id="popular-books-fantasy">
+								
+							</div>
+						</div>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item4.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Great travel at desert</h3>
-                        <span>Sanchit Howdy</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+						<div id="fictional" data-tab-content>
+							<div class="row" id="popular-books-Fiction">
+								
+							</div>
+						</div>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item6.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Life among the pirates</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+					</div>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item8.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Simple way of piece life</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-                </div>
-              </div>
+				</div><!--inner-tabs-->
 
-              <div id="technology" data-tab-content>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item1.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Peaceful Enlightment</h3>
-                        <span>Marmik Lama</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+			</div>
+		</div>
+	</section>
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item3.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Great travel at desert</h3>
-                        <span>Sanchit Howdy</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
+	<section id="quotation" class="align-center pb-5 mb-5">
+		<div class="inner-content">
+			<h2 class="section-title divider">Quote of the day</h2>
+			<blockquote data-aos="fade-up">
+				<q>“The more that you read, the more things you will know. The more that you learn, the more places
+					you’ll go.”</q>
+				<div class="author-name">Dr. Seuss</div>
+			</blockquote>
+		</div>
+	</section>
+<!-- ************************SLIDER SECTION****************** -->
 
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item5.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Life among the pirates</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item7.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Simple way of piece life</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="romantic" data-tab-content>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item1.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Peaceful Enlightment</h3>
-                        <span>Marmik Lama</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item3.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Great travel at desert</h3>
-                        <span>Sanchit Howdy</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item5.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Life among the pirates</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item7.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Simple way of piece life</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="adventure" data-tab-content>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item5.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Life among the pirates</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item7.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Simple way of piece life</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="fictional" data-tab-content>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item5.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Life among the pirates</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="product-itemf">
-                      <figure class="product-style">
-                        <img
-                          src="images/tab-item7.jpg"
-                          alt="Books"
-                          class="product-item"
-                        />
-                        <button
-                          type="button"
-                          class="add-to-cart"
-                          data-product-tile="add-to-cart"
-                        >
-                          Add to Cart
-                        </button>
-                      </figure>
-                      <figcaption>
-                        <h3>Simple way of piece life</h3>
-                        <span>Armor Ramsey</span>
-                        <div class="item-price">$ 40.00</div>
-                      </figcaption>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--inner-tabs-->
-        </div>
-      </div>
-    </section>
-
-    <section id="quotation" class="align-center pb-5 mb-5">
-      <div class="inner-content">
-        <h2 class="section-title divider">Quote of the day</h2>
-        <blockquote data-aos="fade-up">
-          <q
-            >“The more that you read, the more things you will know. The more
-            that you learn, the more places you’ll go.”</q
-          >
-          <div class="author-name">Dr. Seuss</div>
-        </blockquote>
-      </div>
-    </section>
-    <!-- ************************SLIDER SECTION****************** -->
-
-    <section id="special-offer" class="bookshelf pb-5 mb-5 col-12">
-      <div class="section-header align-center">
+<section id="special-offer" class="bookshelf pb-5 mb-5 col-12">
+    <div class="section-header align-center">
         <div class="title">
-          <span>Grab your opportunity</span>
+            <span>Grab your opportunity</span>
         </div>
         <h2 class="section-title">Books with offer</h2>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center">
-          <!-- First Product -->
-          <div class="col-2">
-            <div class="product-itemf">
-              <figure class="product-style">
-                <img
-                  src="images/product-item5.jpg"
-                  alt="Books"
-                  class="img-fluid"
-                />
-                <button type="button" class="add-to-cart btn btn-dark w-100">
-                  Add to Cart
-                </button>
-              </figure>
-              <figcaption class="text-center">
-                <h3>Simple way of piece life</h3>
-                <span>Armor Ramsey</span>
-                <div class="item-price">
-                  <span class="prev-price">$ 50.00</span>$ 40.00
-                </div>
-              </figcaption>
-            </div>
-          </div>
-
-          <!-- Second Product -->
-          <div class="col-2">
-            <div class="product-itemf">
-              <figure class="product-style">
-                <img
-                  src="images/product-item6.jpg"
-                  alt="Books"
-                  class="img-fluid"
-                />
-                <button type="button" class="add-to-cart btn btn-dark w-100">
-                  Add to Cart
-                </button>
-              </figure>
-              <figcaption class="text-center">
-                <h3>Great travel at desert</h3>
-                <span>Sanchit Howdy</span>
-                <div class="item-price">
-                  <span class="prev-price">$ 30.00</span>$ 38.00
-                </div>
-              </figcaption>
-            </div>
-          </div>
-
-          <!-- Third Product -->
-          <div class="col-2">
-            <div class="product-itemf">
-              <figure class="product-style">
-                <img
-                  src="images/product-item7.jpg"
-                  alt="Books"
-                  class="img-fluid"
-                />
-                <button type="button" class="add-to-cart btn btn-dark w-100">
-                  Add to Cart
-                </button>
-              </figure>
-              <figcaption class="text-center">
-                <h3>The lady beauty Scarlett</h3>
-                <span>Arthur Doyle</span>
-                <div class="item-price">
-                  <span class="prev-price">$ 35.00</span>$ 45.00
-                </div>
-              </figcaption>
-            </div>
-          </div>
-
-          <!-- Fourth Product -->
-          <div class="col-2">
-            <div class="product-itemf">
-              <figure class="product-style">
-                <img
-                  src="images/product-item8.jpg"
-                  alt="Books"
-                  class="img-fluid"
-                />
-                <button type="button" class="add-to-cart btn btn-dark w-100">
-                  Add to Cart
-                </button>
-              </figure>
-              <figcaption class="text-center">
-                <h3>Once upon a time</h3>
-                <span>Klien Marry</span>
-                <div class="item-price">
-                  <span class="prev-price">$ 25.00</span>$ 35.00
-                </div>
-              </figcaption>
-            </div>
-          </div>
-
-          <!-- Fifth Product -->
-          <div class="col-2">
-            <div class="product-itemf">
-              <figure class="product-style">
-                <img
-                  src="images/product-item2.jpg"
-                  alt="Books"
-                  class="img-fluid"
-                />
-                <button type="button" class="add-to-cart btn btn-dark w-100">
-                  Add to Cart
-                </button>
-              </figure>
-              <figcaption class="text-center">
-                <h3>Life of Secrets</h3>
-                <span>Klien Marry</span>
-                <div class="item-price">
-                  <span class="prev-price">$ 30.00</span>$ 28.00
-                </div>
-              </figcaption>
-            </div>
-          </div>
-        </div>
-        <!-- End of row -->
-      </div>
-      <!-- End of container -->
-    </section>
-
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="footer-item">
-              <div class="company-brand">
-                <img
-                  src="images/main-logo.png"
-                  alt="logo"
-                  class="footer-logo"
-                />
-                <p class="text-center">
-                  Welcome to Bookify, your ultimate destination for all things
-                  books. We bring you an extensive collection of both modern and
-                  classic titles, catering to readers of every age and interest.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-2 text-center">
-            <div class="footer-menu">
-              <h5 >About Us</h5>
-              <ul class="menu-list " >
-                <li class="menu-item" >
-                  <a href="#">vision</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">articles </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">careers</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">service terms</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">donate</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="footer-menu">
-              <h5>Discover</h5>
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <a href="#">Home</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Books</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Authors</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Subjects</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Advanced Search</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="footer-menu">
-              <h5>My account</h5>
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <a href="#">Sign In</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">View Cart</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">My Wishtlist</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Track My Order</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="footer-menu">
-              <h5>Help</h5>
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <a href="#">Help center</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Report a problem</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Suggesting edits</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Contact us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- / row -->
-      </div>
-    </footer>
-
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="copyright">
-              <div class="row">
-                <div class="col-md-6">
-                  <p>© 2024 All rights reserved. Bookfiy</p>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="social-links align-right">
-                    <ul>
-                      <li>
-                        <a href="#"><i class="icon icon-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="icon icon-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="icon icon-youtube-play"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="icon icon-behance-square"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--grid-->
-          </div>
-          <!--footer-bottom-content-->
-        </div>
-      </div>
     </div>
 
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"
-    ></script>
-    <script src="TopBooks.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
-    <script src="bestSeller.js"></script>
-  </body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- First Product -->
+            <div class="col-2">
+                <div class="product-itemf">
+                    <figure class="product-style">
+                        <img src="images/product-item5.jpg" alt="Books" class="img-fluid">
+                        <button type="button" class="add-to-cart btn btn-dark w-100">Add to Cart</button>
+                    </figure>
+                    <figcaption class="text-center">
+                        <h3>Simple way of piece life</h3>
+                        <span>Armor Ramsey</span>
+                        <div class="item-price">
+                            <span class="prev-price">$ 50.00</span>$ 40.00
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+
+            <!-- Second Product -->
+            <div class="col-2">
+                <div class="product-itemf">
+                    <figure class="product-style">
+                        <img src="images/product-item6.jpg" alt="Books" class="img-fluid">
+                        <button type="button" class="add-to-cart btn btn-dark w-100">Add to Cart</button>
+                    </figure>
+                    <figcaption class="text-center">
+                        <h3>Great travel at desert</h3>
+                        <span>Sanchit Howdy</span>
+                        <div class="item-price">
+                            <span class="prev-price">$ 30.00</span>$ 38.00
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+
+            <!-- Third Product -->
+            <div class="col-2">
+                <div class="product-itemf">
+                    <figure class="product-style">
+                        <img src="images/product-item7.jpg" alt="Books" class="img-fluid">
+                        <button type="button" class="add-to-cart btn btn-dark w-100">Add to Cart</button>
+                    </figure>
+                    <figcaption class="text-center">
+                        <h3>The lady beauty Scarlett</h3>
+                        <span>Arthur Doyle</span>
+                        <div class="item-price">
+                            <span class="prev-price">$ 35.00</span>$ 45.00
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+
+            <!-- Fourth Product -->
+            <div class="col-2">
+                <div class="product-itemf">
+                    <figure class="product-style">
+                        <img src="images/product-item8.jpg" alt="Books" class="img-fluid">
+                        <button type="button" class="add-to-cart btn btn-dark w-100">Add to Cart</button>
+                    </figure>
+                    <figcaption class="text-center">
+                        <h3>Once upon a time</h3>
+                        <span>Klien Marry</span>
+                        <div class="item-price">
+                            <span class="prev-price">$ 25.00</span>$ 35.00
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+
+            <!-- Fifth Product -->
+            <div class="col-2">
+                <div class="product-itemf">
+                    <figure class="product-style">
+                        <img src="images/product-item2.jpg" alt="Books" class="img-fluid">
+                        <button type="button" class="add-to-cart btn btn-dark w-100">Add to Cart</button>
+                    </figure>
+                    <figcaption class="text-center">
+                        <h3>Life of Secrets</h3>
+                        <span>Klien Marry</span>
+                        <div class="item-price">
+                            <span class="prev-price">$ 30.00</span>$ 28.00
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+        </div><!-- End of row -->
+    </div><!-- End of container -->
+</section>
+
+
+
+	
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4">
+
+					<div class="footer-item">
+						<div class="company-brand">
+							<img src="images/main-logo.png" alt="logo" class="footer-logo">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
+								nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames
+								semper erat ac in suspendisse iaculis.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>About Us</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">vision</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">articles </a>
+							</li>
+							<li class="menu-item">
+								<a href="#">careers</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">service terms</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">donate</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>Discover</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">Home</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Books</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Authors</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Subjects</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Advanced Search</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>My account</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">Sign In</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">View Cart</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">My Wishtlist</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Track My Order</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>Help</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">Help center</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Report a problem</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Suggesting edits</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Contact us</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- / row -->
+
+		</div>
+	</footer>
+
+	<div id="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="copyright">
+						<div class="row">
+
+							<div class="col-md-6">
+								<p>© 2022 All rights reserved. Free HTML Template by <a
+										href="https://www.templatesjungle.com/" target="_blank">TemplatesJungle</a></p>
+							</div>
+
+							<div class="col-md-6">
+								<div class="social-links align-right">
+									<ul>
+										<li>
+											<a href="#"><i class="icon icon-facebook"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-twitter"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-youtube-play"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-behance-square"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div><!--grid-->
+
+				</div><!--footer-bottom-content-->
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+	<script src="TopBooks.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/index.js"></script>
+	<script src="bestSeller.js"></script>
+  <script src="Books-filter/filterBooksByTypeAndPopUpFunction.js"></script>
+	
+</body>
+
 </html>
