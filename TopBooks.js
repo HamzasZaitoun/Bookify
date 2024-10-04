@@ -1,7 +1,7 @@
 'use strict';
 
 function fetchData() {
-    fetch("AsmaaMarar/books.json")
+    fetch('AsmaMarar/books.json')
         .then(response => response.json())
         .then(data => displayTopBooks(data.books)) // Access the "books" array in the JSON
         .catch(error => console.error("Error fetching books:", error));
@@ -16,7 +16,7 @@ function displayTopBooks(books) {
         book_card.classList.add("col-md-3");
         book_card.innerHTML = `
             <div class="product-itemf">
-                <figure class="product-style">
+                <figure class="product-style books-image-height">
                     <img src="${book.image_url}" alt="${book.title}" class="product-image">
                     <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
                 </figure>
