@@ -18,7 +18,7 @@ function displayTopBooks(books) {
             <div class="product-itemf">
                 <figure class="product-style books-image-height">
                     <img src="${book.image_url}" alt="${book.title}" class="product-image">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+                    <button type="button" class="add-to-cart add-to-cart-function" data-product-tile="add-to-cart">Add to Cart</button>
                 </figure>
                 <figcaption>
                     <h3>${book.title}</h3>
