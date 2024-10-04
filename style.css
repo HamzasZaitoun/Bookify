@@ -28,6 +28,12 @@ Version: 1.1
     --header-height-min: 80px;
   }
 }
+.books-image-height{
+  height: 380px;
+  border-radius: 2rem;
+  border: 2px solid #F3F2EC;
+}
+
 
 /* Theme Colors */
 :root {
@@ -1729,8 +1735,8 @@ img.post-image {
   text-align: right;
 }
 
-.top-content .right-element .for-buy {
-  margin-right: 40px;
+.top-content .right-element .for-buy , .top-content .right-element .for-wish {
+  margin-right: 5rem;
 }
 
 /* - Search Form hover Effects

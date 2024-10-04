@@ -9,7 +9,7 @@
 			document.getElementById("author-name").textContent = "By " + book.author;
 			document.getElementById("main-description").textContent = book.description;
 			document.getElementById("price").textContent = "$ " + book.price;
-			document.getElementById("bookImage").src = "AsmaMarar/" + book.image_url; // Ensure this is correct based on your JSON
+			document.getElementById("bookImage").src = "./" + book.image_url; // Ensure this is correct based on your JSON
 		})
 		.catch(error => console.error('Error loading JSON:', error));
 

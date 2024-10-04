@@ -1,465 +1,454 @@
 {
-    "books": [
-      {
-        "title": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "type": "Fiction",
-        "description": "A powerful story of racial injustice and childhood innocence set in the Deep South.",
-        "price": 12.99,
-        "book_rate": 4.8,
-        "image_url": "imagesB/1.jpg"
-      },
-      {
-        "title": "1984",
-        "author": "George Orwell",
-        "type": "Dystopian",
-        "description": "A dystopian novel about a totalitarian regime that uses surveillance and mind control.",
-        "price": 10.99,
-        "book_rate": 4.7,
-        "image_url": "imagesB/2.jpg"
-      },
-      {
-        "title": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "type": "Classic",
-        "description": "A tale of ambition, wealth, and the American Dream set in the Jazz Age.",
-        "price": 8.99,
-        "book_rate": 4.5,
-        "image_url": "imagesB/3.jpg"
-      },
-      {
-        "title": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "type": "Romance",
-        "description": "A romantic story of manners, love, and class distinctions in 19th-century England.",
-        "price": 9.99,
-        "book_rate": 4.6,
-        "image_url": "imagesB/4.jpg"
-      },
-      {
-        "title": "Moby Dick",
-        "author": "Herman Melville",
-        "type": "Adventure",
-        "description": "A thrilling narrative about a sea captain's obsessive quest to hunt down a white whale.",
-        "price": 11.99,
-        "book_rate": 4.4,
-        "image_url": "imagesB/5.jpg"
-      },
-      {
-        "title": "Brave New World",
-        "author": "Aldous Huxley",
-        "type": "Dystopian",
-        "description": "A futuristic society where happiness is engineered, and individuality is suppressed.",
-        "price": 10.49,
-        "book_rate": 4.6,
-        "image_url": "imagesB/6.jpg"
-      },
-      {
-        "title": "The Catcher in the Rye",
-        "author": "J.D. Salinger",
-        "type": "Fiction",
-        "description": "A coming-of-age story about teenage rebellion and the search for identity.",
-        "price": 9.49,
-        "book_rate": 4.3,
-        "image_url": "imagesB/7.webp"
-      },
-      {
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "type": "Fantasy",
-        "description": "An epic adventure where a hobbit embarks on a journey to reclaim a treasure guarded by a dragon.",
-        "price": 14.99,
-        "book_rate": 4.9,
-        "image_url": "imagesB/8.jpg"
-      },
-      {
-        "title": "Crime and Punishment",
-        "author": "Fyodor Dostoevsky",
-        "type": "Classic",
-        "description": "A psychological drama exploring guilt, redemption, and the human condition.",
-        "price": 13.99,
-        "book_rate": 4.7,
-        "image_url": "imagesB/9.jpg"
-      },
-      {
-        "title": "War and Peace",
-        "author": "Leo Tolstoy",
-        "type": "Historical",
-        "description": "A monumental novel set during the Napoleonic Wars, exploring themes of war and society.",
-        "price": 19.99,
-        "book_rate": 4.8,
-        "image_url": "imagesB/10.jpg"
-      },
-      {
-        "title": "The Brothers Karamazov",
-        "author": "Fyodor Dostoevsky",
-        "type": "Philosophical",
-        "description": "A philosophical exploration of faith, doubt, and free will set in 19th-century Russia.",
-        "price": 15.99,
-        "book_rate": 4.7,
-        "image_url": "imagesB/11.jpg"
-      },
-      {
-        "title": "Jane Eyre",
-        "author": "Charlotte Brontë",
-        "type": "Romance",
-        "description": "An orphaned girl's emotional journey toward independence and love.",
-        "price": 9.99,
-        "book_rate": 4.6,
-        "image_url": "imagesB/12.jpg"
-      },
-      {
-        "title": "Les Misérables",
-        "author": "Victor Hugo",
-        "type": "Historical",
-        "description": "A story of revolution, justice, and redemption in 19th-century France.",
-        "price": 12.99,
-        "book_rate": 4.8,
-        "image_url": "imagesB/13.jpg"
-      },
-      {
-        "title": "The Odyssey",
-        "author": "Homer",
-        "type": "Epic",
-        "description": "The legendary journey of Odysseus as he returns home after the Trojan War.",
-        "price": 11.49,
-        "book_rate": 4.7,
-        "image_url": "imagesB/14.jpg"
-      },
-      {
-        "title": "Wuthering Heights",
-        "author": "Emily Brontë",
-        "type": "Classic",
-        "description": "A dark tale of love, revenge, and passion set on the Yorkshire moors.",
-        "price": 8.99,
-        "book_rate": 4.5,
-        "image_url": "imagesB/15.jpg"
-      },
-      {
-        "title": "Don Quixote",
-        "author": "Miguel de Cervantes",
-        "type": "Adventure",
-        "description": "The comedic and adventurous story of a nobleman who becomes a self-styled knight.",
-        "price": 14.49,
-        "book_rate": 4.4,
-        "image_url": "imagesB/16.jpg"
-      },
-      {
-        "title": "Frankenstein",
-        "author": "Mary Shelley",
-        "type": "Science Fiction",
-        "description": "A scientist creates a monster that challenges the limits of humanity and science.",
-        "price": 9.99,
-        "book_rate": 4.5,
-        "image_url": "imagesB/17.jpg"
-      },
-      {
-        "title": "The Count of Monte Cristo",
-        "author": "Alexandre Dumas",
-        "type": "Adventure",
-        "description": "An epic tale of betrayal, revenge, and redemption across Europe.",
-        "price": 13.99,
-        "book_rate": 4.8,
-        "image_url": "imagesB/18.jpg"
-      },
-      {
-        "title": "One Hundred Years of Solitude",
-        "author": "Gabriel García Márquez",
-        "type": "Magical Realism",
-        "description": "A multi-generational tale of the Buendía family in the mythical town of Macondo.",
-        "price": 12.49,
-        "book_rate": 4.6,
-        "image_url": "imagesB/19.jpg"
-      },
-      {
-        "title": "Anna Karenina",
-        "author": "Leo Tolstoy",
-        "type": "Classic",
-        "description": "A story of passion, betrayal, and tragedy in 19th-century Russian aristocracy.",
-        "price": 15.49,
-        "book_rate": 4.8,
-        "image_url": "imagesB/20.jpg"
-      },
-      {
-        "title": "The Divine Comedy",
-        "author": "Dante Alighieri",
-        "type": "Epic",
-        "description": "A journey through the afterlife, exploring themes of sin, redemption, and divine justice.",
-        "price": 16.99,
-        "book_rate": 4.9,
-        "image_url": "imagesB/21.jpg"
-      },
-      {
-        "title": "Dracula",
-        "author": "Bram Stoker",
-        "type": "Horror",
-        "description": "A gothic horror novel about a vampire's attempt to move from Transylvania to England.",
-        "price": 8.99,
-        "book_rate": 4.6,
-        "image_url": "imagesB/22.jpg"
-      },
-      {
-        "title": "The Picture of Dorian Gray",
-        "author": "Oscar Wilde",
-        "type": "Philosophical",
-        "description": "A philosophical novel exploring themes of beauty, morality, and self-destruction.",
-        "price": 10.49,
-        "book_rate": 4.4,
-        "image_url": "imagesB/23.jpg"
-      },
-      {
-        "title": "The Sun Also Rises",
-        "author": "Ernest Hemingway",
-        "type": "Fiction",
-        "description": "A novel about post-World War I disillusionment, following expatriates in Europe.",
-        "price": 9.99,
-        "book_rate": 4.3,
-        "image_url": "imagesB/24.jpg"
-      },
-      {
-        "title": "The Metamorphosis",
-        "author": "Franz Kafka",
-        "type": "Absurdist",
-        "description": "A man wakes up transformed into a giant insect, symbolizing isolation and alienation.",
-        "price": 7.99,
-        "book_rate": 4.4,
-        "image_url": "imagesB/25.jpg"
-      },
-      {
-        "title": "Lolita",
-        "author": "Vladimir Nabokov",
-        "type": "Psychological",
-        "description": "A controversial novel about obsession, manipulation, and moral degradation.",
-        "price": 11.99,
-        "book_rate": 4.2,
-        "image_url": "imagesB/26.jpg"
-      },
-      {
-        "title": "Atomic Habits",
-        "author": "James Clear",
-        "type": "Self-Help",
-        "description": "A guide to building good habits and breaking bad ones through small, incremental changes.",
-        "price": 14.99,
-        "book_rate": 4.8,
-        "image_url": "imagesB/27.jpg"
-      },
-      {
-        "title": "Thinking, Fast and Slow",
-        "author": "Daniel Kahneman",
-        "type": "Psychology",
-        "description": "A deep dive into the two systems of thinking and how they shape our choices.",
-        "price": 12.49,
-        "book_rate": 4.6,
-        "image_url": "imagesB/28.webp"
-      },
-      {
-        "title": "The Subtle Art of Not Giving a F*ck",
-        "author": "Mark Manson",
-        "type": "Self-Help",
-        "description": "A counterintuitive approach to living a good life by focusing on what truly matters.",
-        "price": 10.99,
-        "book_rate": 4.4,
-        "image_url": "imagesB/29.png"
-      },
-      {
-        "title": "The Four Agreements",
-        "author": "Don Miguel Ruiz",
-        "type": "Spirituality",
-        "description": "A practical guide to personal freedom through four agreements we make with ourselves.",
-        "price": 9.99,
-        "book_rate": 4.7,
-        "image_url": "imagesB/30.jpg"
-      },
-      {
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "type": "Fiction",
-        "description": "A magical story about following one's dreams and discovering one’s personal legend.",
-        "price": 11.99,
-        "book_rate": 4.6,
-        "image_url": "imagesB/31.jpg"
-      },
-      {
-        "title": "The Road",
-        "author": "Cormac McCarthy",
-        "type": "Dystopian",
-        "description": "A haunting novel about a father and son’s survival in a post-apocalyptic world.",
-        "price": 13.99,
-        "book_rate": 4.5,
-        "image_url": "imagesB/32.jpg"
-      },
-      {
-        "title": "The Kite Runner",
-        "author": "Khaled Hosseini",
-        "type": "Fiction",
-        "description": "A poignant story about friendship, betrayal, and redemption in Afghanistan.",
-        "price": 11.49,
-        "book_rate": 4.8,
-        "image_url": "imagesB/33.jpg"
-      },
-      {
-        "title": "The Night Circus",
-        "author": "Erin Morgenstern",
-        "type": "Fantasy",
-        "description": "A magical competition between two young illusionists at a mysterious circus.",
-        "price": 12.99,
-        "book_rate": 4.4,
-        "image_url": "imagesB/34.jpg"
-      },
-      {
-        "title": "The Shining",
-        "author": "Stephen King",
-        "type": "Horror",
-        "description": "A terrifying story of a family trapped in a haunted hotel, where evil resides.",
-        "price": 10.99,
-        "book_rate": 4.6,
-        "image_url": "imagesB/35.jpg"
-      },
-      {
-        "title": "Good to Great",
-        "author": "Jim Collins",
-        "type": "Business",
-        "description": "An analysis of how good companies can become great through specific strategies.",
-        "price": 14.49,
-        "book_rate": 4.7,
-        "image_url": "imagesB/36.jpg"
-      },
-      {
-        "title": "Dune",
-        "author": "Frank Herbert",
-        "type": "Science Fiction",
-        "description": "A science fiction classic about the struggle for control of the desert planet Arrakis.",
-        "price": 13.99,
-        "book_rate": 4.8,
-        "image_url": "imagesB/37.jpg"
-      },
-      {
-        "title": "The Girl on the Train",
-        "author": "Paula Hawkins",
-        "type": "Thriller",
-        "description": "A psychological thriller about a woman who becomes embroiled in a missing person investigation.",
-        "price": 9.99,
-        "book_rate": 4.3,
-        "image_url": "imagesB/38.jpg"
-      },
-      {
-        "title": "Where the Crawdads Sing",
-        "author": "Delia Owens",
-        "type": "Fiction",
-        "description": "A murder mystery and coming-of-age story set in the marshlands of North Carolina.",
-        "price": 12.49,
-        "book_rate": 4.7,
-        "image_url": "imagesB/39.jpg"
-      },
-      {
-        "title": "Little Fires Everywhere",
-        "author": "Celeste Ng",
-        "type": "Fiction",
-        "description": "A suburban family is turned upside down by a custody battle and hidden secrets.",
-        "price": 11.99,
-        "book_rate": 4.5,
-        "image_url": "imagesB/40.jpg"
-      },
-      {
-        "title": "The Silent Patient",
-        "author": "Alex Michaelides",
-        "type": "Thriller",
-        "description": "A psychological thriller about a woman who shoots her husband and then refuses to speak.",
-        "price": 10.49,
-        "book_rate": 4.6,
-        "image_url": "imagesB/41.jpg"
-      },
-      {
-        "title": "Circe",
-        "author": "Madeline Miller",
-        "type": "Fantasy",
-        "description": "A retelling of the Greek myth of Circe, the powerful enchantress who defies gods and men.",
-        "price": 13.49,
-        "book_rate": 4.8,
-        "image_url": "imagesB/42.jpg"
-      },
-      {
-        "title": "Big Little Lies",
-        "author": "Liane Moriarty",
-        "type": "Fiction",
-        "description": "A murder mystery revolving around the lives of three women in a suburban community.",
-        "price": 12.99,
-        "book_rate": 4.6,
-        "image_url": "imagesB/43.jpg"
-      },
-      {
-        "title": "The Outsiders",
-        "author": "S.E. Hinton",
-        "type": "Young Adult",
-        "description": "A story of teenage rebellion and class conflict in 1960s America.",
-        "price": 8.99,
-        "book_rate": 4.5,
-        "image_url": "imagesB/44.png"
-      },
-      {
-        "title": "Catch-22",
-        "author": "Joseph Heller",
-        "type": "Satire",
-        "description": "A satirical novel about the absurdities of war, bureaucracy, and survival.",
-        "price": 10.99,
-        "book_rate": 4.4,
-        "image_url": "imagesB/45.jpg"
-      },
-      {
-        "title": "Slaughterhouse-Five",
-        "author": "Kurt Vonnegut",
-        "type": "Science Fiction",
-        "description": "A darkly humorous novel about time travel, war, and the bombing of Dresden.",
-        "price": 9.99,
-        "book_rate": 4.3,
-        "image_url": "imagesB/46.jpg"
-      },
-      {
-        "title": "The Handmaid’s Tale",
-        "author": "Margaret Atwood",
-        "type": "Dystopian",
-        "description": "A chilling vision of a totalitarian society where women are subjugated and used for reproduction.",
-        "price": 12.99,
-        "book_rate": 4.6,
-        "image_url": "imagesB/47.jpg"
-      },
-      {
-        "title": "The Goldfinch",
-        "author": "Donna Tartt",
-        "type": "Fiction",
-        "description": "A coming-of-age story about art, love, and loss, centered around a stolen painting.",
-        "price": 13.99,
-        "book_rate": 4.5,
-        "image_url": "imagesB/48.jpg"
-      },
-      {
-        "title": "Normal People",
-        "author": "Sally Rooney",
-        "type": "Fiction",
-        "description": "A modern love story exploring the complexities of friendship, intimacy, and identity.",
-        "price": 11.99,
-        "book_rate": 4.4,
-        "image_url": "imagesB/49.jpg"
-      },
-      {
-        "title": "American Gods",
-        "author": "Neil Gaiman",
-        "type": "Fantasy",
-        "description": "A battle between old and new gods plays out in a surreal, mythical version of America.",
-        "price": 14.49,
-        "book_rate": 4.7,
-        "image_url": "imagesB/50.jpg"
-      },
-      {
-        "title": "The Hunger Games",
-        "author": "Suzanne Collins",
-        "type": "Young Adult",
-        "description": "A dystopian novel where teenagers must fight to the death in a televised competition.",
-        "price": 10.99,
-        "book_rate": 4.8,
-        "image_url": "imagesB/51.jpg"
-      }
-      
-    ]
-  }
-  
+  "books": [
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "type": "Fiction",
+      "description": "A powerful story of racial injustice and childhood innocence set in the Deep South.",
+      "price": 12.99,
+      "book_rate": 4.8,
+      "image_url": "./AsmaMarar/1.jpg"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "type": "Dystopian",
+      "description": "A dystopian novel about a totalitarian regime that uses surveillance and mind control.",
+      "price": 10.99,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/2.jpg"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "type": "Classic",
+      "description": "A tale of ambition, wealth, and the American Dream set in the Jazz Age.",
+      "price": 8.99,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/3.jpg"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "type": "Romance",
+      "description": "A romantic story of manners, love, and class distinctions in 19th-century England.",
+      "price": 9.99,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/4.jpg"
+    },
+    {
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "type": "Adventure",
+      "description": "A thrilling narrative about a sea captain's obsessive quest to hunt down a white whale.",
+      "price": 11.99,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/5.jpg"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "type": "Dystopian",
+      "description": "A futuristic society where happiness is engineered, and individuality is suppressed.",
+      "price": 10.49,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/6.jpg"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "type": "Fiction",
+      "description": "A coming-of-age story about teenage rebellion and the search for identity.",
+      "price": 9.49,
+      "book_rate": 4.3,
+      "image_url": "./AsmaMarar/100.jpg"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "type": "Fantasy",
+      "description": "An epic adventure where a hobbit embarks on a journey to reclaim a treasure guarded by a dragon.",
+      "price": 14.99,
+      "book_rate": 4.9,
+      "image_url": "./AsmaMarar/8.jpg"
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "type": "Classic",
+      "description": "A psychological drama exploring guilt, redemption, and the human condition.",
+      "price": 13.99,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/102.jpg"
+    },
+    {
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "type": "Fantasy",
+      "description": "A monumental novel set during the Napoleonic Wars, exploring themes of war and society.",
+      "price": 19.99,
+      "book_rate": 4.8,
+      "image_url": "./AsmaMarar/10.jpg"
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "type": "Classic",
+      "description": "A Classic exploration of faith, doubt, and free will set in 19th-century Russia.",
+      "price": 15.99,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/11.jpg"
+    },
+    {
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "type": "Romance",
+      "description": "An orphaned girl's emotional journey toward independence and love.",
+      "price": 9.99,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/12.jpg"
+    },
+    {
+      "title": "Les Misérables",
+      "author": "Victor Hugo",
+      "type": "Fantasy",
+      "description": "A story of revolution, justice, and redemption in 19th-century France.",
+      "price": 12.99,
+      "book_rate": 4.8,
+      "image_url": "./AsmaMarar/101.jpg"
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "type": "Classic",
+      "description": "The legendary journey of Odysseus as he returns home after the Trojan War.",
+      "price": 11.49,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/14.jpg"
+    },
+    {
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "type": "Classic",
+      "description": "A dark tale of love, revenge, and passion set on the Yorkshire moors.",
+      "price": 8.99,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/15.jpg"
+    },
+    {
+      "title": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "type": "Fantasy",
+      "description": "The comedic and adventurous story of a nobleman who becomes a self-styled knight.",
+      "price": 14.49,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/16.jpg"
+    },
+    {
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "type": "Fiction",
+      "description": "A scientist creates a monster that challenges the limits of humanity and science.",
+      "price": 9.99,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/17.jpg"
+    },
+    {
+      "title": "The Count of Monte Cristo",
+      "author": "Alexandre Dumas",
+      "type": "Romance",
+      "description": "An epic tale of betrayal, revenge, and redemption across Europe.",
+      "price": 13.99,
+      "book_rate": 4.8,
+      "image_url": "./AsmaMarar/18.jpg"
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "type": "Romance",
+      "description": "A multi-generational tale of the Buendía family in the mythical town of Macondo.",
+      "price": 12.49,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/19.jpg"
+    },
+    {
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "type": "Classic",
+      "description": "A story of passion, betrayal, and tragedy in 19th-century Russian aristocracy.",
+      "price": 15.49,
+      "book_rate": 4.8,
+      "image_url": "./AsmaMarar/20.jpg"
+    },
+    {
+      "title": "The Divine Comedy",
+      "author": "Dante Alighieri",
+      "type": "Romance",
+      "description": "A journey through the afterlife, exploring themes of sin, redemption, and divine justice.",
+      "price": 16.99,
+      "book_rate": 4.9,
+      "image_url": "./AsmaMarar/21.jpg"
+    },
+    {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "type": "Dystopian",
+      "description": "A gothic Dystopian novel about a vampire's attempt to move from Transylvania to England.",
+      "price": 8.99,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/22.jpg"
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "type": "Classic",
+      "description": "A Classic novel exploring themes of beauty, morality, and self-destruction.",
+      "price": 10.49,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/23.jpg"
+    },
+    {
+      "title": "The Sun Also Rises",
+      "author": "Ernest Hemingway",
+      "type": "Fiction",
+      "description": "A novel about post-World War I disillusionment among American expatriates in Europe.",
+      "price": 11.99,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/24.jpg"
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "type": "Dystopian",
+      "description": "A dystopian future where books are banned and burned to suppress ideas.",
+      "price": 9.99,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/25.jpg"
+    },
+    {
+      "title": "The Stranger",
+      "author": "Albert Camus",
+      "type": "Fiction",
+      "description": "A novel that explores existentialism and the absurd through the life of an indifferent man.",
+      "price": 9.49,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/26.jpg"
+    },
+    {
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "type": "Historical Fiction",
+      "description": "A moving story of a poor family's journey westward during the Great Depression.",
+      "price": 11.99,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/27.jpg"
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "type": "Fantasy",
+      "description": "An epic tale of the struggle between good and evil in the world of Middle-earth.",
+      "price": 22.99,
+      "book_rate": 4.9,
+      "image_url": "./AsmaMarar/103.jpg"
+    },
+    {
+      "title": "Lolita",
+      "author": "Vladimir Nabokov",
+      "type": "Fiction",
+      "description": "A controversial novel about obsession and forbidden love.",
+      "price": 12.49,
+      "book_rate": 4.3,
+      "image_url": "./AsmaMarar/29.jpg"
+    },
+    {
+      "title": "A Tale of Two Cities",
+      "author": "Charles Dickens",
+      "type": "Historical Fiction",
+      "description": "A novel set during the French Revolution, exploring themes of justice and sacrifice.",
+      "price": 10.99,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/30.jpg"
+    },
+    {
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "type": "Post-Apocalyptic",
+      "description": "A father and son struggle to survive in a desolate, post-apocalyptic world.",
+      "price": 9.99,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/31.jpg"
+    },
+    {
+      "title": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "type": "Dystopian",
+      "description": "A dystopian novel about a theocratic society where women are subjugated and oppressed.",
+      "price": 12.99,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/32.jpg"
+    },
+    {
+      "title": "Slaughterhouse-Five",
+      "author": "Kurt Vonnegut",
+      "type": "Science Fiction",
+      "description": "A novel that blends science fiction and war, exploring the experiences of a soldier during WWII.",
+      "price": 9.49,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/33.jpg"
+    },
+    {
+      "title": "Middlemarch",
+      "author": "George Eliot",
+      "type": "Classic",
+      "description": "A novel of social criticism, focusing on the lives of individuals in a small English town.",
+      "price": 13.99,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/34.jpg"
+    },
+    {
+      "title": "Catch-22",
+      "author": "Joseph Heller",
+      "type": "Satire",
+      "description": "A satirical novel about the absurdities of war and bureaucracy.",
+      "price": 11.49,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/35.jpg"
+    },
+    {
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "type": "Historical Fiction",
+      "description": "A haunting story of slavery, memory, and motherhood.",
+      "price": 10.99,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/36.jpg"
+    },
+    {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "type": "Fiction",
+      "description": "A novel about a man caught in a nightmarish bureaucratic process without ever knowing his crime.",
+      "price": 8.99,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/37.jpg"
+    },
+    {
+      "title": "The Bell Jar",
+      "author": "Sylvia Plath",
+      "type": "Fiction",
+      "description": "A semi-autobiographical novel exploring the struggles of mental illness and identity.",
+      "price": 9.99,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/38.jpg"
+    },
+    {
+      "title": "In Search of Lost Time",
+      "author": "Marcel Proust",
+      "type": "Classic",
+      "description": "A monumental exploration of memory, time, and relationships.",
+      "price": 18.99,
+      "book_rate": 4.8,
+      "image_url": "./AsmaMarar/39.jpg"
+    },
+    {
+      "title": "The Master and Margarita",
+      "author": "Mikhail Bulgakov",
+      "type": "Fiction",
+      "description": "A satirical novel blending supernatural elements with political commentary.",
+      "price": 10.49,
+      "book_rate": 4.7,
+      "image_url": "./AsmaMarar/40.jpg"
+    },
+    {
+      "title": "On the Road",
+      "author": "Jack Kerouac",
+      "type": "Fiction",
+      "description": "A defining novel of the Beat Generation, exploring freedom and the search for meaning.",
+      "price": 9.99,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/41.jpg"
+    },
+    {
+      "title": "Madame Bovary",
+      "author": "Gustave Flaubert",
+      "type": "Classic",
+      "description": "A novel about the disillusionment of a woman trapped in a provincial, middle-class life.",
+      "price": 11.49,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/42.jpg"
+    },
+    {
+      "title": "Heart of Darkness",
+      "author": "Joseph Conrad",
+      "type": "Classic",
+      "description": "A haunting exploration of imperialism and human nature, set in the Congo.",
+      "price": 8.49,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/43.jpg"
+    },
+    {
+      "title": "Maus",
+      "author": "Art Spiegelman",
+      "type": "Graphic Novel",
+      "description": "A graphic novel depicting the Holocaust through the lens of a son and his father's experiences.",
+      "price": 14.99,
+      "book_rate": 4.9,
+      "image_url": "./AsmaMarar/104.jpg"
+    },
+    {
+      "title": "Ulysses",
+      "author": "James Joyce",
+      "type": "Modernist",
+      "description": "A stream-of-consciousness novel that follows a day in the life of Leopold Bloom in Dublin.",
+      "price": 17.99,
+      "book_rate": 4.2,
+      "image_url": "./AsmaMarar/45.jpg"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "type": "Fiction",
+      "description": "A story of teenage angst and alienation, following Holden Caulfield's experiences in New York.",
+      "price": 9.99,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/46.jpg"
+    },
+    {
+      "title": "The Sound and the Fury",
+      "author": "William Faulkner",
+      "type": "Fiction",
+      "description": "A complex, stream-of-consciousness novel about the decline of a Southern family.",
+      "price": 11.49,
+      "book_rate": 4.3,
+      "image_url": "./AsmaMarar/47.jpg"
+    },
+    {
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "type": "Classic",
+      "description": "A story of sin, guilt, and redemption in Puritan New England.",
+      "price": 8.99,
+      "book_rate": 4.4,
+      "image_url": "./AsmaMarar/48.jpg"
+    },
+    {
+      "title": "Gulliver's Travels",
+      "author": "Jonathan Swift",
+      "type": "Satire",
+      "description": "A satirical tale of adventure and human folly, seen through the travels of Lemuel Gulliver.",
+      "price": 9.49,
+      "book_rate": 4.5,
+      "image_url": "./AsmaMarar/49.jpg"
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "type": "Classic",
+      "description": "A novel about vanity, moral corruption, and the consequences of a hedonistic life.",
+      "price": 9.99,
+      "book_rate": 4.6,
+      "image_url": "./AsmaMarar/50.jpg"
+    }
+  ]
+}
