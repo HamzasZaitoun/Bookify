@@ -33,4 +33,4 @@ document
     document.getElementById("contactForm").reset();
   });
 
-  localStorage.clear();
+  
