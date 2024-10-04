@@ -114,7 +114,9 @@
                       <a href="#featured-books" class="nav-link">Top Books</a>
                     </li>
                     <li class="menu-item">
-                      <a href="#popular-books" class="nav-link">Popular Books</a>
+                      <a href="#popular-books" class="nav-link"
+                        >Popular Books</a
+                      >
                     </li>
                     <li class="menu-item has-sub pr-5">
                       <a href="#pages" class="nav-link">more Pages</a>
@@ -145,71 +147,62 @@
     </div>
     <!--header-wrap-->
 
-	<section id="billboard">
+    <section id="billboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button class="prev slick-arrow">
+              <i class="icon icon-arrow-left"></i>
+            </button>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="main-slider pattern-overlay">
+              <div id="divMain" class="slider-item"></div>
 
-                    <button class="prev slick-arrow">
-                        <i class="icon icon-arrow-left"></i>
-                    </button>
-
-                    <div  class="main-slider pattern-overlay">
-                        <div id="divMain" class="slider-item ">
-
-                        </div>
-
-                        <div id="divMain1" class="slider-item ">
-
-                        </div>
-
-
-                    </div><!--slider-->
-
-                    <button class="next slick-arrow">
-                        <i class="icon icon-arrow-right"></i>
-                    </button>
-
-                </div>
+              <div id="divMain1" class="slider-item"></div>
             </div>
-        </div>
+            <!--slider-->
 
+            <button class="next slick-arrow">
+              <i class="icon icon-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
-	<!-- START OF  BOOKS SECTION  -->
-	<section id="featured-books" class="py-5 my-5">
-		<div class="container">
-			<div id="top-books" class="row">
-				<div class="col-md-12 top-book">
-					<div class="section-header align-center">
-						<h2 class="section-title">Our Top Books</h2>
-					</div>
-	
-					<div class="product-list" data-aos="fade-up">
-						<div id="top-books" class="row">
-							
-	
-							
-						</div>
-					</div><!-- ft-books-slider -->
-				</div><!-- grid -->
-			</div><!-- inner-content -->
-		</div>
-	
-			<div class="row">
-				<div class="col-md-12">
-					<div class="btn-wrap align-right">
-						<a href="#popular-books" class="btn-accent-arrow">View more Books <i class="icon icon-ns-arrow-right"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-<!-- Modal Structure -->
-<div id="productModal" class="modal">
-    <div class="modal-content">
+    <!-- START OF  BOOKS SECTION  -->
+    <section id="featured-books" class="py-5 my-5">
+      <div class="container">
+        <div id="top-books" class="row">
+          <div class="col-md-12 top-book">
+            <div class="section-header align-center">
+              <h2 class="section-title">Our Top Books</h2>
+            </div>
+
+            <div class="product-list" data-aos="fade-up">
+              <div id="top-books" class="row"></div>
+            </div>
+            <!-- ft-books-slider -->
+          </div>
+          <!-- grid -->
+        </div>
+        <!-- inner-content -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="btn-wrap align-right">
+            <a href="#popular-books" class="btn-accent-arrow"
+              >View more Books <i class="icon icon-ns-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
         <div class="grid-container">
           <div class="grid-item">
             <img id="modalImage" src="" alt="Product Image" class="modal-img" />
@@ -233,11 +226,10 @@
     <section id="best-selling" class="leaf-pattern-overlay">
       <div class="corner-pattern-overlay">
         <div class="container">
-			<div class="section-header align-center">
-				<h2 class="section-title">Our best selling</h2>
-			</div>
+          <div class="section-header align-center">
+            <h2 class="section-title">Our best selling</h2>
+          </div>
           <div class="row justify-content-center">
-			
             <div class="col-md-8">
               <div class="row">
                 <div class="col-md-6">
@@ -339,10 +331,8 @@
     </section>
     <!-- ************************SLIDER SECTION****************** -->
 
-   
-
     <footer id="footer">
-      <div class="container">
+      <div class="container align-center">
         <div class="row">
           <div class="col-md-4">
             <div class="footer-item">
@@ -353,10 +343,9 @@
                   class="footer-logo"
                 />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Sagittis sed ptibus liberolectus nonet psryroin. Amet sed
-                  lorem posuere sit iaculis amet, ac urna. Adipiscing fames
-                  semper erat ac in suspendisse iaculis.
+                  Welcome to Bookify, your ultimate destination for all things
+                  books. We bring you an extensive collection of both modern and
+                  classic titles, catering to readers of every age and interest.
                 </p>
               </div>
             </div>
@@ -457,10 +446,8 @@
               <div class="row">
                 <div class="col-md-6">
                   <p>
-                    © 2022 All rights reserved. Free HTML Template by
-                    <a href="https://www.templatesjungle.com/" target="_blank"
-                      >TemplatesJungle</a
-                    >
+                    © 2024 Bookify. Your journey, your stories. All rights
+                    reserved.
                   </p>
                 </div>
 
@@ -510,7 +497,7 @@
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
     <script src="bestSeller.js"></script>
-	<script src="Books-filter/filterBooksByTypeAndPopUpFunction.js"></script>
+    <script src="Books-filter/filterBooksByTypeAndPopUpFunction.js"></script>
     <script src="billboard.js"></script>
   </body>
 </html>
