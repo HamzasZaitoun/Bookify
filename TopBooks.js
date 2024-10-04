@@ -1,7 +1,7 @@
 'use strict';
 
 function fetchData() {
-    fetch("AsmaaMarar/books.json")
+    fetch('AsmaMarar/books.json')
         .then(response => response.json())
         .then(data => displayTopBooks(data.books)) // Access the "books" array in the JSON
         .catch(error => console.error("Error fetching books:", error));
