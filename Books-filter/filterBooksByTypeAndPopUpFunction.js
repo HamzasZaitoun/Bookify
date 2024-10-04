@@ -30,7 +30,7 @@ fetch("./AsmaMarar/books.json")
                             <img
                                 src="${books[i].image_url}"
                                 alt="Books"
-                                class="product-image "
+                                class="product-image"
                             />
                             <button
                                 type="button"
