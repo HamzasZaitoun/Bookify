@@ -34,7 +34,7 @@ fetch("./AsmaMarar/books.json")
                             />
                             <button
                                 type="button"
-                                class="add-to-cart"
+                                class="add-to-cart add-to-cart-function"
                                 data-product-tile="add-to-cart"
                             >
                                 Add to Cart
@@ -43,7 +43,7 @@ fetch("./AsmaMarar/books.json")
                         <figcaption>
                             <h3>${books[i].title}</h3>
                             <span>${books[i].author}</span>
-                            <div class="item-price">${books[i].price}</div>
+                            <div class="item-price">$${books[i].price}</div>
                         </figcaption>
                     </div>
                 </div>
