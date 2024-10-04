@@ -77,6 +77,5 @@ function addToCart(book) {
     }
   
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert(`${book.title} has been added to your cart.`);
   }
   

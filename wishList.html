@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="wishList.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wishList.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Wish List</title>
-  </head>
-  <body>
+</head>
+<body>
     <!-- Go Back Button -->
-    <button id="goBackButton">Go Back</button>
+    <button id="goBackButton"><a href="index.html">Go Back</a></button>
 
     <div id="header">
-      <h1>My Wish List</h1>
+        <h1>My Wish List <i class="bi bi-balloon-heart-fill"></i></h1>
     </div>
 
     <section id="wish-table">
-      <div>
-        <table id="wishdata" class="table">
-          <thead id="tableHed">
-            <!-- Header will be generated here -->
-          </thead>
-          <tbody id="tableBody">
-            <!-- Rows will be dynamically added here -->
-          </tbody>
-        </table>
-      </div>
+        <div>
+            <table id="wishdata" class="table">
+                <thead id="tableHed">
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
     </section>
     <script src="wishList.js"></script>
-  </body>
+    <script src="addToCart.js"></script>
+    <script src="Books-filter/filterBooksByTypeAndPopUpFunction.js"></script>
+</body>
 </html>

@@ -13,7 +13,7 @@
 }
 .pop,.wish
 {
-    margin-top: 25%;
+  
     border-radius: 5%;
 }
 .pop:hover
@@ -90,4 +90,8 @@
   .product-itemf
   {
     cursor: pointer;
+  }
+  .in-cart {
+    background-color: green !important;
+    color: white;
   }
