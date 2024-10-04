@@ -39,6 +39,23 @@
       html {
         scroll-behavior: smooth !important;
       }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .product-item{
+        width: 250px;
+        height: 600px;
+        /* border-radius: 50px; */
+      }
+
+      #my {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
     </style>
   </head>
 
@@ -107,7 +124,7 @@
                 <div class="main-menu stellarnav">
                   <ul class="menu-list">
                     <li class="menu-item active">
-                      <a href="#billboard">Home</a>
+                      <a href="./index.html">Home</a>
                     </li>
 
                     <li class="menu-item">
@@ -119,7 +136,7 @@
                       >
                     </li>
                     <li class="menu-item">
-                      <a href="./specialBooks.html">Our Special</a>
+                      <a href="#">Our Special</a>
                     </li>
 
                     <li class="menu-item has-sub pr-5">
@@ -153,199 +170,15 @@
         </div>
       </header>
     </div>
-    <!--header-wrap-->
 
-    <section id="billboard">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <button class="prev slick-arrow">
-              <i class="icon icon-arrow-left"></i>
-            </button>
-
-            <div class="main-slider pattern-overlay">
-              <div id="divMain" class="slider-item"></div>
-
-              <div id="divMain1" class="slider-item"></div>
-            </div>
-            <!--slider-->
-
-            <button class="next slick-arrow">
-              <i class="icon icon-arrow-right"></i>
-            </button>
-          </div>
-        </div>
+    <div class="section-header align-center">
+      <div class="title">
+        <span>using API</span>
       </div>
-    </section>
-
-    <!-- START OF  BOOKS SECTION  -->
-    <section id="featured-books" class="py-5 my-5">
-      <div class="container">
-        <div id="top-books" class="row">
-          <div class="col-md-12 top-book">
-            <div class="section-header align-center">
-              <h2 class="section-title">Our Top Books</h2>
-            </div>
-
-            <div class="product-list" data-aos="fade-up">
-              <div id="top-books" class="row"></div>
-            </div>
-            <!-- ft-books-slider -->
-          </div>
-          <!-- grid -->
-        </div>
-        <!-- inner-content -->
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="btn-wrap align-right">
-            <a href="#popular-books" class="btn-accent-arrow"
-              >View more Books <i class="icon icon-ns-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal Structure -->
-    <div id="productModal" class="modal">
-      <div class="modal-content">
-        <div class="grid-container">
-          <div class="grid-item">
-            <img id="modalImage" src="" alt="Product Image" class="modal-img" />
-          </div>
-          <div class="grid-item">
-            <span class="close">&times;</span>
-            <h3 id="modalTitle"></h3>
-            <p id="modalAuthor"></p>
-            <div class="modal-price"></div>
-            <button
-              type="button"
-              class="add-to-cart-modal pop add-to-cart-function"
-            >
-              Add to Cart
-            </button>
-            <button
-              id="wishbtn"
-              type="button"
-              class="pop wish"
-              onclick="changeIcon(this)"
-            >
-              <i class="bi bi-suit-heart"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+      <h2 class="section-title">Special Books</h2>
     </div>
-    <!-- END OF THE SECTION -->
-    <section id="best-selling" class="leaf-pattern-overlay">
-      <div class="corner-pattern-overlay">
-        <div class="container">
-          <div class="section-header align-center">
-            <h2 class="section-title">Our best selling</h2>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-6">
-                  <figure class="products-thumb">
-                    <img
-                      id="bookImage"
-                      src=""
-                      alt="book"
-                      class="single-image"
-                    />
-                    <!-- Fixed the image path -->
-                  </figure>
-                </div>
-                <div class="col-md-6">
-                  <div class="product-entry">
-                    <h2 class="section-title divider" id="titleH2"></h2>
-                    <div class="products-content">
-                      <div class="author-name" id="author-name"></div>
-                      <p id="main-description"></p>
-                      <div class="item-price" id="price"></div>
-                      <div class="btn-wrap">
-                        <a href="#" class="btn-accent-arrow"
-                          >shop it now <i class="icon icon-ns-arrow-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- / row -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="popular-books" class="bookshelf py-5 my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header align-center">
-              <div class="title">
-                <span>Some quality items</span>
-              </div>
-              <h2 class="section-title">Popular Books</h2>
-            </div>
-
-            <ul class="tabs">
-              <li data-tab-target="#all-genre" class="active tab">All Genre</li>
-              <li data-tab-target="#business" class="tab">Dystopian</li>
-              <li data-tab-target="#technology" class="tab">Classic</li>
-              <li data-tab-target="#romantic" class="tab">romance</li>
-              <li data-tab-target="#adventure" class="tab">fantasy</li>
-              <li data-tab-target="#fictional" class="tab">Fiction</li>
-            </ul>
-
-            <div class="tab-content">
-              <div id="all-genre" data-tab-content class="active">
-                <div class="row" id="popular-books-all"></div>
-              </div>
-
-              <div id="business" data-tab-content>
-                <div class="row" id="popular-books-business"></div>
-              </div>
-
-              <div id="technology" data-tab-content>
-                <div class="row" id="popular-books-Classic"></div>
-              </div>
-
-              <div id="romantic" data-tab-content>
-                <div class="row" id="popular-books-Romance"></div>
-              </div>
-
-              <div id="adventure" data-tab-content>
-                <div class="row" id="popular-books-fantasy"></div>
-              </div>
-
-              <div id="fictional" data-tab-content>
-                <div class="row" id="popular-books-Fiction"></div>
-              </div>
-            </div>
-          </div>
-          <!--inner-tabs-->
-        </div>
-      </div>
-    </section>
-
-    <section id="quotation" class="align-center pb-5 mb-5">
-      <div class="inner-content">
-        <h2 class="section-title divider">Quote of the day</h2>
-        <blockquote data-aos="fade-up">
-          <q
-            >“The more that you read, the more things you will know. The more
-            that you learn, the more places you’ll go.”</q
-          >
-          <div class="author-name">Dr. Seuss</div>
-        </blockquote>
-      </div>
-    </section>
-    <!-- ************************SLIDER SECTION****************** -->
+    <div id="my"></div>
 
     <footer id="footer">
       <div class="container align-center">
@@ -371,19 +204,13 @@
               <h5>About Us</h5>
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="./hamzaZamil/AboutUs/index.html#about-bookify"
-                    >About Bookify</a
-                  >
+                  <a href="#">About Bookify</a>
                 </li>
                 <li class="menu-item">
-                  <a href="./hamzaZamil/AboutUs/index.html#our-mission"
-                    >Our mission</a
-                  >
+                  <a href="#">Our mission</a>
                 </li>
                 <li class="menu-item">
-                  <a href="./hamzaZamil/AboutUs/index.html#our-team"
-                    >Our team</a
-                  >
+                  <a href="#">Our team</a>
                 </li>
               </ul>
             </div>
@@ -393,16 +220,10 @@
               <h5>Discover</h5>
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="#billboard">Home</a>
+                  <a href="#">Home</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#featured-books">Top books</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#best-selling">Best Selling</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#popular-books">Popular Books</a>
+                  <a href="#">Books</a>
                 </li>
                 <li class="menu-item">
                   <a href="#">Search</a>
@@ -431,22 +252,16 @@
               <h5>Help</h5>
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="./hamzaZamil/contactUs/contactUs.html"
-                    >Help center</a
-                  >
+                  <a href="#">Help center</a>
                 </li>
                 <li class="menu-item">
-                  <a href="./hamzaZamil/contactUs/contactUs.html"
-                    >Report a problem</a
-                  >
+                  <a href="#">Report a problem</a>
                 </li>
                 <li class="menu-item">
-                  <a href="./hamzaZamil/contactUs/contactUs.html"
-                    >Suggesting edits</a
-                  >
+                  <a href="#">Suggesting edits</a>
                 </li>
                 <li class="menu-item">
-                  <a href="./hamzaZamil/contactUs/contactUs.html">Contact us</a>
+                  <a href="#">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -480,6 +295,9 @@
                       </li>
                       <li>
                         <a href="#"><i class="icon icon-youtube-play"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon icon-behance-square"></i></a>
                       </li>
                     </ul>
                   </div>
@@ -516,5 +334,6 @@
     <script src="billboard.js"></script>
     <script src="addToCart.js"></script>
     <script src="ZaidAyoub/registeration/main.js"></script>
+    <script src="apiTest.js"></script>
   </body>
 </html>

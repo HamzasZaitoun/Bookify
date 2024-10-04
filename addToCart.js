@@ -1,42 +1,82 @@
-'use strict';
+// Function to handle adding items to cart, merging duplicates
+function addToCart(book) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-const add_to_cart = document.querySelectorAll('.add-to-cart-function');
-const add_to_cart_page = document.getElementById("cardParent");
+  // Check if the item already exists in the cart
+  const existingItem = cart.find((item) => item.title === book.title);
 
-add_to_cart.forEach(button => {
-    button.addEventListener('click', addToCart);
-});
+  if (existingItem) {
+    // If it exists, increase the quantity
+    existingItem.quantity += 1;
+  } else {
+    // If it doesn't exist, add it with quantity 1
+    book.quantity = 1;
+    cart.push(book);
+  }
 
-function addToCart(event) {
-    // Get the clicked button's associated product information
-    const button = event.target;
-    const imageUrl = button.getAttribute('data-image-url');
-    const title = button.getAttribute('data-title');
-    const price = button.getAttribute('data-price');
-
-    // Create a new div to hold the cart item
-    const cartItem = document.createElement('div');
-    cartItem.classList.add('d-flex', 'align-items-center', 'mb-5');
-
-    // Use innerHTML to define the content
-    cartItem.innerHTML = `
-        <div class="flex-shrink-0">
-          <img src="${imageUrl}" class="img-fluid" style="width: 150px;" alt="${title}">
-        </div>
-        <div class="flex-grow-1 ms-3">
-          <a href="#!" class="float-end"><i class="fas fa-times"></i></a>
-          <h5 class="text-item">${title}</h5>
-          <div class="d-flex align-items-center">
-            <p class="fw-bold mb-0 me-5 pe-3">$${price}</p>
-            <div class="def-number-input number-input safari_only">
-              <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-              <input class="quantity fw-bold bg-body-tertiary text-body" min="0" name="quantity" value="1" type="number">
-              <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-            </div>
-          </div>
-        </div>
-    `;
-
-    // Append the newly created cart item to the cart parent element
-    add_to_cart_page.appendChild(cartItem);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`${book.title} has been added to your cart.`);
 }
+
+// Function to calculate total price of items in the cart
+function calculateTotalPrice(cart) {
+  return cart.reduce(
+    (sum, item) => sum + parseFloat(item.price) * item.quantity,
+    0
+  );
+}
+
+// Function to display cart items with quantity and remove functionality
+function displayCartItems() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartContainer = document.querySelector(".cart-items-container");
+  const totalPriceElement = document.querySelector(".total-price");
+
+  if (!cartContainer || !totalPriceElement) {
+    console.error("Cart container or total price element not found.");
+    return;
+  }
+
+  cartContainer.innerHTML = ""; // Clear previous cart items
+
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>Your cart is empty</p>";
+    totalPriceElement.textContent = "$0.00";
+    return;
+  }
+
+  // Loop over the cart items and display each
+  cart.forEach((item, index) => {
+    const cartItemHTML = `
+      <div class="cart-item d-flex align-items-center mb-4">
+          <img src="${item.image}" alt="${
+      item.title
+    }" style="width: 100px;" class="img-fluid">
+          <div class="ms-3">
+              <h5>${item.title}</h5>
+              <p>${item.author}</p>
+              <p class="fw-bold">$${parseFloat(item.price).toFixed(2)} x ${
+      item.quantity
+    }</p>
+          </div>
+          <button class="btn btn-danger ms-auto" onclick="removeFromCart(${index})">Remove</button>
+      </div>
+    `;
+    cartContainer.innerHTML += cartItemHTML;
+  });
+
+  // Calculate and display the total price using the new function
+  const total = calculateTotalPrice(cart);
+  totalPriceElement.textContent = `$${total.toFixed(2)}`;
+}
+
+// Function to remove an item from the cart
+function removeFromCart(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index, 1); // Remove the item at the specified index
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCartItems(); // Re-render the cart after removal
+}
+
+// Call the function to display cart items when the cart page loads
+document.addEventListener("DOMContentLoaded", displayCartItems);

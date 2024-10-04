@@ -10,6 +10,7 @@
 			document.getElementById("main-description").textContent = book.description;
 			document.getElementById("price").textContent = "$ " + book.price;
 			document.getElementById("bookImage").src = "./" + book.image_url; // Ensure this is correct based on your JSON
+			document.getElementById("bookImage").style.borderRadius = "20px";
 		})
 		.catch(error => console.error('Error loading JSON:', error));
 

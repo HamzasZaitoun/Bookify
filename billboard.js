@@ -11,11 +11,9 @@ fetch('AsmaMarar/books.json')
             <div class="banner-content">
                 <h2 class="banner-title">${book1.title}</h2>
                 <p>${book1.description}</p>
-                <div class="btn-wrap">
-                    <a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i class="icon icon-ns-arrow-right"></i></a>
-                </div><!--btn-wrap-->
+               
             </div><!--banner-content-->
-            <img src="${book1.image_url}" alt="${book1.title}" class="banner-image" width="410" height="325">
+            <img style="border-radius: 20px;" src="${book1.image_url}" alt="${book1.title}" class="banner-image" width="310" height="385">
         `;
         sliderContainer.innerHTML = sliderHTML1;
 
@@ -25,11 +23,9 @@ fetch('AsmaMarar/books.json')
             <div class="banner-content">
                 <h2 class="banner-title">${book2.title}</h2>
                 <p>${book2.description}</p>
-                <div class="btn-wrap">
-                    <a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i class="icon icon-ns-arrow-right"></i></a>
-                </div><!--btn-wrap-->
+               
             </div><!--banner-content-->
-            <img src="${book2.image_url}" alt="${book2.title}" class="banner-image" width="410" height="325">
+            <img style="border-radius: 20px;" src="${book2.image_url}" alt="${book2.title}" class="banner-image" width="310" height="305">
         `;
         sliderContainer1.innerHTML = sliderHTML2;
 

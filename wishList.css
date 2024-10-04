@@ -1,76 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Raleway", arial, sans-serif;
-    background-color: #F3F2EC;
-    padding: 10vh 10vh;
+  font-family: "Raleway", arial, sans-serif;
+  background-color: #f3f2ec;
+  padding: 10vh 10vh;
 }
 
 #header {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h1 {
-    color: #343a40;
+  color: #343a40;
 }
 
 #wish-table {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Add border to the table without borders on the sides */
 table {
-    border-collapse: collapse; /* Ensures borders are merged */
-    width: 100%; /* Makes the table take the full width */
-    table-layout: fixed; /* Ensures the table cells have equal width */
+  border-collapse: collapse; /* Ensures borders are merged */
+  width: 100%; /* Makes the table take the full width */
+  table-layout: fixed; /* Ensures the table cells have equal width */
 }
 
 /* Header styles */
 th {
-    background-color: #C5A992; /* Background color for headers */
-    color: white; /* Text color for headers */
+  background-color: #c5a992; /* Background color for headers */
+  color: white; /* Text color for headers */
 }
 
 /* Style for table cells */
-th, td {
-    padding: 12px;
-    text-align: center; /* Center the text in cells */
+th,
+td {
+  padding: 12px;
+  text-align: center; /* Center the text in cells */
 }
 
 /* Only add border-bottom to table rows */
 tr {
-    border-bottom: 2px solid #C5A992; /* Bottom border color matches buttons */
+  border-bottom: 2px solid #c5a992; /* Bottom border color matches buttons */
 }
 
 td {
-    vertical-align: middle; /* Center vertically */
+  vertical-align: middle; /* Center vertically */
 }
 
 /* Border-radius for images */
 img {
-    border-radius: 10px; /* Adjust border radius for images */
+  border-radius: 10px; /* Adjust border radius for images */
 }
 
 /* Existing button styles... */
 #goBackButton {
-    background-color: #C5A992; /* Same color as other buttons */
-    color: white; /* Text color */
-    border: none; /* No border */
-    padding: 10px 15px; /* Padding for the button */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin-bottom: 20px; /* Space below the button */
-    border-radius: 5px;
+  background-color: #c5a992; /* Same color as other buttons */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding for the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 20px; /* Space below the button */
+  border-radius: 5px;
 }
 
 #goBackButton:hover {
-    background-color: #E9E7DD; /* Color on hover */
-    color: black; /* Change text color on hover */
+  background-color: #e9e7dd; /* Color on hover */
+  color: black; /* Change text color on hover */
 }
