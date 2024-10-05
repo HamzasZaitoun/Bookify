@@ -183,3 +183,90 @@ img {
   transform: scale(0.95);
   transition-duration: .5s;
 }
+
+@media (max-width: 768px) {
+  /* Keep the table structure intact and display rows below the header */
+  #wishdata {
+    width: 100%;
+    margin: 0 auto; /* Center the table on smaller screens */
+  }
+
+  /* Table body with 2 items per row */
+  #tableBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row */
+    gap: 15px; /* Add space between items */
+  }
+
+  /* Adjust table header to have the same grid as the body */
+  #tableHed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensure the header matches the grid layout */
+    text-align: center;
+    background-color: #C5A992;
+    width: 100%; /* Ensure the header takes full width */
+  }
+
+  /* Each cell will be full width and stacked vertically */
+  #tableBody td {
+    display: block; /* Use block for each cell */
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+
+  /* Group every 2 rows with a border underneath */
+  #tableBody tr:nth-child(2n) {
+    border-bottom: 2px solid #C5A992;
+  }
+
+  /* Adjust the delete button */
+  td .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Set the main table to be a flex container */
+  #wish-table {
+    display: flex;
+    flex-direction: column; /* Stack header and body vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  /* Adjust table header */
+  #tableHed {
+    display: grid;
+    grid-template-columns: 1fr; /* Ensure header is a single column */
+    text-align: center;
+    background-color: #C5A992;
+    width: 100%; /* Ensure the header takes full width */
+    margin-bottom: 10px; /* Add space below the header */
+  }
+
+  /* Table body */
+  #tableBody {
+    display: grid;
+    grid-template-columns: 1fr; /* Set body to a single column */
+    width: 100%;
+    gap: 15px; /* Space between items */
+  }
+
+  /* Each cell will be full width and centered */
+  #tableBody td {
+    display: flex; /* Use flexbox for centering within each cell */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Ensure the cell takes the full width */
+    border: none;
+    padding: 10px; /* Add padding for better appearance */
+  }
+
+  /* Ensure the only item in the body matches the header width */
+  #tableBody td:only-child {
+    width: 100%; /* Match header width */
+  }
+}
+
