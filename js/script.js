@@ -139,3 +139,12 @@
 
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const userNameElement = document.getElementById("userName");
+  const userName = localStorage.getItem("userName");
+
+  if (userName && userNameElement) {
+    userNameElement.textContent = ` Welcome , ${userName}`;
+  }
+});

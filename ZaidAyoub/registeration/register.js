@@ -83,7 +83,7 @@ document.getElementById("signin-btn").addEventListener("click", function () {
     document.getElementById("signin-password").value = "";
 
     setTimeout(function () {
-      window.location.href = "http://127.0.0.1:5502/index.html"; // Redirect to index.html
+      window.location.href = "/index.html"; // Redirect to index.html
     }, 500);
   } else {
     displayMessage(
@@ -121,9 +121,10 @@ function validatePassword(password) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    let userNameElement = document.getElementById("userName");
-    if (userNameElement) {
-      userNameElement.textContent = localStorage.getItem("userName");
-    }
-  });
-  
+  const userNameElement = document.getElementById("userName");
+  const userName = localStorage.getItem("userName");
+
+  if (userName && userNameElement) {
+      userNameElement.textContent = userName;
+  }
+});
