@@ -83,7 +83,7 @@ document.getElementById("signin-btn").addEventListener("click", function () {
     document.getElementById("signin-password").value = "";
 
     setTimeout(function () {
-      window.location.href = "/index.html"; // Redirect to index.html
+      window.location.href = "../../index.html"; // Redirect to index.html
     }, 2000);
   } else {
     displayMessage(
