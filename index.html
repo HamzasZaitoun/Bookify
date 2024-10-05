@@ -209,33 +209,24 @@
     </section>
 
     <!-- Modal Structure -->
+    <!-- Modal Structure -->
     <div id="productModal" class="modal">
       <div class="modal-content">
-        <div class="grid-container">
-          <div class="grid-item">
-            <img id="modalImage" src="" alt="Product Image" class="modal-img" />
+          <div class="grid-container">
+              <div class="grid-item">
+                  <img id="modalImage" src="" alt="Product Image" class="modal-img" />
+              </div>
+              <div class="grid-item">
+                  <span class="close">&times;</span>
+                  <h3 id="modalTitle"></h3>
+                  <p id="modalAuthor"></p>
+                  <div class="modal-price"></div>
+                  <button type="button" class="add-to-cart-modal">Add to Cart</button>
+                  <button type="button" class="wish" id="addToWishlistButton">
+                      <i class="bi bi-suit-heart"></i>
+                  </button>
+              </div>
           </div>
-          <div class="grid-item">
-            <span class="close">&times;</span>
-            <h3 id="modalTitle"></h3>
-            <p id="modalAuthor"></p>
-            <div class="modal-price"></div>
-            <button
-              type="button"
-              class="add-to-cart-modal pop add-to-cart-function"
-            >
-              Add to Cart
-            </button>
-            <button
-              id="wishbtn"
-              type="button"
-              class="pop wish"
-              onclick="changeIcon(this)"
-            >
-              <i class="bi bi-suit-heart"></i>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
     <!-- END OF THE SECTION -->
