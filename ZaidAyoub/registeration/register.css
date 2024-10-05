@@ -18,6 +18,7 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  font-family: "Raleway", arial, sans-serif;
 }
 
 .container {
