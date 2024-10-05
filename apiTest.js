@@ -9,9 +9,13 @@ fetch(apiURL)
     console.log(books);
     const productList = document.getElementById("my");
     productList.innerHTML = ""; // Clear existing content
+    // Make the price generate randomly
+    const randomNumber = (min, max) => (Math.random() * (max - min) + min).toFixed(0); 
+   
 
     // Loop through the books and display them on the page
     books.forEach((book) => {
+       const price=randomNumber(50,150);
       const bookItem = `
                 <div class="col-md-3">
                     <div class="product-item">
@@ -22,10 +26,11 @@ fetch(apiURL)
                         <figcaption>
                             <h3>${book.title}</h3>
                             <span>${book.originalTitle}</span>
-                            <div class="item-price">$100</div>
+                            <div class="item-price">$${price}</div>
                         </figcaption>
                     </div>
                 </div>`;
+                
       productList.innerHTML += bookItem; // Add the new item to the list
     });
 
@@ -35,6 +40,8 @@ fetch(apiURL)
   .catch((error) => {
     console.error("Error fetching books:", error);
   });
+
+
 
 // Function to enable adding items to the cart
 function enableAddToCart() {
