@@ -84,7 +84,7 @@ document.getElementById("signin-btn").addEventListener("click", function () {
 
     setTimeout(function () {
       window.location.href = "/index.html"; // Redirect to index.html
-    }, 500);
+    }, 2000);
   } else {
     displayMessage(
       "signin-email-message",
@@ -116,15 +116,6 @@ function validateEmail(email) {
 
 function validatePassword(password) {
   // Regular expression: 8 characters, at least 2 digits, no specific requirement for uppercase or special characters
-  const passwordPattern = /^(?=.*\d{2,})[A-Za-z\d]{8}$/;
+  const passwordPattern = /^(?=.*\d{2,})[A-Za-z\d]{8,}$/;
   return passwordPattern.test(password);
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const userNameElement = document.getElementById("userName");
-  const userName = localStorage.getItem("userName");
-
-  if (userName && userNameElement) {
-      userNameElement.textContent = userName;
-  }
-});
