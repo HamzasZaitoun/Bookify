@@ -32,6 +32,10 @@ body {
   background-color: black;
   color: white;
   transition: background-color 0.3s ease-in-out;
+  padding: 10px 15px;  
+  margin-top: -4px; 
+  font-size: 16px;    
+
 }
 
 .submit-btn:hover {
@@ -64,4 +68,16 @@ h2 {
 .contact-form.fade-in {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Reset transform to its normal position */
+}
+
+#goBackButton {
+  background-color: black;  
+  color: white;  
+  border: none; 
+  padding: 10px 15px;  
+  font-size: 16px;  
+  cursor: pointer;  
+  margin-bottom: 20x; 
+  border-radius: 5px;
+  width: 49%;
 }
