@@ -108,7 +108,7 @@ fetch("./AsmaMarar/books.json")
                         <figcaption>
                             <h3>${books[i].title}</h3>
                             <span>${books[i].author}</span>
-                            <div class="item-price">$${books[i].price}</div>
+                            <div class="item-price">${books[i].price}</div>
                         </figcaption>
                     </div>
                 </div>
@@ -166,8 +166,7 @@ fetch("./AsmaMarar/books.json")
                 modalImg.src = productImage;
                 modalTitle.textContent = productItem.querySelector('h3').textContent;
                 modalAuthor.textContent = productItem.querySelector('span').textContent;
-                modalPrice.textContent = `${productItem.querySelector('.item-price').textContent}`;
-
+                modalPrice.textContent = productItem.querySelector('.item-price').textContent;
 
                 // Check if the book is already in the wishlist
                 const bookTitle = modalTitle.textContent;
