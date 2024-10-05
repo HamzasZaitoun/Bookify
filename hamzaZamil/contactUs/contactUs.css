@@ -32,6 +32,10 @@ body {
   background-color: black;
   color: white;
   transition: background-color 0.3s ease-in-out;
+  padding: 10px 15px;  
+  margin-top: -4px; 
+  font-size: 16px;    
+
 }
 
 .submit-btn:hover {
@@ -49,4 +53,31 @@ h2 {
   text-align: center;
   margin-top: 20px;
   display: none;
+}
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start with a small upward shift */
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Smooth transition */
+}
+
+/* When the page loads, apply this class to trigger the fade-in */
+.contact-form.fade-in {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset transform to its normal position */
+}
+
+#goBackButton {
+  background-color: black;  
+  color: white;  
+  border: none; 
+  padding: 10px 15px;  
+  font-size: 16px;  
+  cursor: pointer;  
+  margin-bottom: 20x; 
+  border-radius: 5px;
+  width: 49%;
 }
