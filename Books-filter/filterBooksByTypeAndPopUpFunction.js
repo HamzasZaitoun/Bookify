@@ -166,7 +166,8 @@ fetch("./AsmaMarar/books.json")
                 modalImg.src = productImage;
                 modalTitle.textContent = productItem.querySelector('h3').textContent;
                 modalAuthor.textContent = productItem.querySelector('span').textContent;
-                modalPrice.textContent = productItem.querySelector('.item-price').textContent;
+                modalPrice.textContent = `$${productItem.querySelector('.item-price').textContent}`;
+
 
                 // Check if the book is already in the wishlist
                 const bookTitle = modalTitle.textContent;

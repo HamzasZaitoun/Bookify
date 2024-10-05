@@ -25,11 +25,6 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* #wishdata { 
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 /* Add border to the table without borders on the sides */
 table {
   border-collapse: collapse; /* Ensures borders are merged */
