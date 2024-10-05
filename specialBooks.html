@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>Bookify</title>
-    <link rel="icon" href="./assets/logotitle.png" type="image/png"> <!-- Favicon -->
+    <link rel="icon" href="./assets/logotitle.png" type="image/png" />
+    <!-- Favicon -->
     <!-- <link rel="icon" type="image/x-icon" href="/images/bookify-favicon-color.svg"> -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,7 +48,7 @@
         box-sizing: border-box;
       }
 
-      .product-item{
+      .product-item {
         width: 250px;
         height: 600px;
         /* border-radius: 50px; */
@@ -56,42 +57,44 @@
       #my {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-
       }
 
       @media (max-width: 768px) {
-    #my {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
-    }
+        #my {
+          grid-template-columns: repeat(
+            auto-fill,
+            minmax(200px, 1fr)
+          ); /* Adjust for smaller screens */
+        }
 
-    .top-content .col-md-6 {
-      text-align: center; /* Center items on smaller screens */
-      margin-bottom: 15px; /* Space between elements */
-    }
+        .top-content .col-md-6 {
+          text-align: center; /* Center items on smaller screens */
+          margin-bottom: 15px; /* Space between elements */
+        }
 
-    .product-item {
-      height: auto; /* Adjust height for smaller screens */
-    }
+        .product-item {
+          height: auto; /* Adjust height for smaller screens */
+        }
 
-    .modal-img {
-      max-width: 100%; /* Ensure modal images are responsive */
-      height: auto;
-    }
-  }
+        .modal-img {
+          max-width: 100%; /* Ensure modal images are responsive */
+          height: auto;
+        }
+      }
 
-  @media (max-width: 576px) {
-    .product-item {
-      max-width: 100%; /* Full width on extra small screens */
-    }
+      @media (max-width: 576px) {
+        .product-item {
+          max-width: 100%; /* Full width on extra small screens */
+        }
 
-    nav #navbar {
-      text-align: center; /* Center navigation items on small screens */
-    }
-  }
-  .in-cart {
-    background-color: green !important;
-    color: white;
-  }
+        nav #navbar {
+          text-align: center; /* Center navigation items on small screens */
+        }
+      }
+      .in-cart {
+        background-color: green !important;
+        color: white;
+      }
     </style>
   </head>
 
@@ -103,12 +106,6 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
               <div class="right-element">
-                <a
-                  href="/index.html"
-                  class="user-account for-buy"
-                  ><i class="icon icon-user"></i><span id="userName"></span>
-                </a>
-
                 <a href="wishList.html" class="for-wish"
                   ><i class="bi bi-clipboard-heart"></i
                   ><span>Wish List</span></a
@@ -117,25 +114,6 @@
                 <a href="cart.html" class="cart for-buy"
                   ><i class="icon icon-clipboard"></i><span>Cart</span></a
                 >
-
-                <div class="action-menu">
-                  <div class="search-bar">
-                    <a
-                      href="#"
-                      class="search-button search-toggle"
-                      data-selector="#header-wrap"
-                    >
-                      <i class="icon icon-search"></i>
-                    </a>
-                    <form role="search" method="get" class="search-box">
-                      <input
-                        class="search-field text search-input"
-                        placeholder="Search"
-                        type="search"
-                      />
-                    </form>
-                  </div>
-                </div>
               </div>
               <!--top-right-->
             </div>
@@ -150,7 +128,7 @@
             <div class="col-md-2">
               <div class="main-logo">
                 <a href="index.html"
-                  ><img src="./assets/Bookify brown Logo.png" alt="logo"
+                  ><img src="./assets/BookifyBrownLogo.png" alt="logo"
                 /></a>
               </div>
             </div>
@@ -163,7 +141,6 @@
                       <a href="./index.html">Home</a>
                     </li>
 
-                   
                     <li class="menu-item">
                       <a href="#">Our Special</a>
                     </li>
@@ -199,26 +176,26 @@
         </div>
       </header>
     </div>
-     <!-- Modal Structure -->
-<div id="productModal" class="modal">
-  <div class="modal-content">
-      <div class="grid-container">
+    <!-- Modal Structure -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <div class="grid-container">
           <div class="grid-item">
-              <img id="modalImage" src="" alt="Product Image" class="modal-img" />
+            <img id="modalImage" src="" alt="Product Image" class="modal-img" />
           </div>
           <div class="grid-item">
-              <span class="close">&times;</span>
-              <h3 id="modalTitle"></h3>
-              <p id="modalAuthor"></p>
-              <div class="modal-price"></div>
-              <button type="button" class="add-to-cart-modal">Add to Cart</button>
-              <button type="button" class="wish" id="addToWishlistButton">
-                  <i class="bi bi-suit-heart"></i>
-              </button>
+            <span class="close">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalAuthor"></p>
+            <div class="modal-price"></div>
+            <button type="button" class="add-to-cart-modal">Add to Cart</button>
+            <button type="button" class="wish" id="addToWishlistButton">
+              <i class="bi bi-suit-heart"></i>
+            </button>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
     <div class="section-header align-center">
       <div class="title">
@@ -227,13 +204,9 @@
       <h2 class="section-title">Our Special collection</h2>
     </div>
 
-
-    
     <div id="my">
-        <!-- here my code will generate loop  -->
+      <!-- here my code will generate loop  -->
     </div>
-
-
 
     <footer id="footer">
       <div class="container align-center">
@@ -242,7 +215,7 @@
             <div class="footer-item">
               <div class="company-brand">
                 <img
-                  src="./assets/Bookify brown logo.png"
+                  src="./assets/BookifyBrownLogo.png"
                   alt="logo"
                   class="footer-logo"
                 />
@@ -259,13 +232,24 @@
               <h5>About Us</h5>
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="#">About Bookify</a>
+                  <a href="./hamzaZamil/AboutUs/aboutUs.html#video-bookify"
+                    >Why Bookify !!</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href="#">Our mission</a>
+                  <a href="./hamzaZamil/AboutUs/aboutUs.html#about-bookify"
+                    >About Bookify</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href="#">Our team</a>
+                  <a href="./hamzaZamil/AboutUs/aboutUs.html#our-mission"
+                    >Our mission</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="./hamzaZamil/AboutUs/aboutUs.html#our-team"
+                    >Our team</a
+                  >
                 </li>
               </ul>
             </div>
@@ -275,13 +259,16 @@
               <h5>Discover</h5>
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="#">Home</a>
+                  <a href="./index.html#billboard">Home</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Books</a>
+                  <a href="./index.html#featured-books">Top books</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Search</a>
+                  <a href="./index.html#best-selling">Best Selling</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./index.html#popular-books">Popular Books</a>
                 </li>
               </ul>
             </div>
@@ -291,13 +278,13 @@
               <h5>My account</h5>
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="#">Sign In</a>
+                  <a href="./ZaidAyoub/registeration/register.html">Sign Out</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">View Cart</a>
+                  <a href="./cart.html">View Cart</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">My Wishtlist</a>
+                  <a href="./wishList.html">My Wishtlist</a>
                 </li>
               </ul>
             </div>
@@ -307,16 +294,22 @@
               <h5>Help</h5>
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="#">Help center</a>
+                  <a href="./hamzaZamil/contactUs/contactUs.html"
+                    >Help center</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href="#">Report a problem</a>
+                  <a href="./hamzaZamil/contactUs/contactUs.html"
+                    >Report a problem</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href="#">Suggesting edits</a>
+                  <a href="./hamzaZamil/contactUs/contactUs.html"
+                    >Suggesting edits</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href="#">Contact us</a>
+                  <a href="./hamzaZamil/contactUs/contactUs.html">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -343,16 +336,17 @@
                   <div class="social-links align-right">
                     <ul>
                       <li>
-                        <a href="#"><i class="icon icon-facebook"></i></a>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=61566907378787"
+                          target="_blank"
+                          ><i class="icon icon-facebook"></i
+                        ></a>
                       </li>
                       <li>
                         <a href="#"><i class="icon icon-twitter"></i></a>
                       </li>
                       <li>
                         <a href="#"><i class="icon icon-youtube-play"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="icon icon-behance-square"></i></a>
                       </li>
                     </ul>
                   </div>
