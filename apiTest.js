@@ -6,20 +6,25 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((data) => {
     const books = data;
-    console.log(books);
     const productList = document.getElementById("my");
     productList.innerHTML = ""; // Clear existing content
-    const randomNumber = (min, max) => (Math.random() * (max - min) + min).toFixed(0);
+
+    // Random price generator
+    const randomNumber = (min, max) => (Math.random() * (max - min) + min).toFixed(2);
 
     // Loop through the books and display them on the page
-    books.forEach((book) => {
-      const price = randomNumber(50, 150); // Generate a random price for the book
+    books.forEach((book, index) => {
+      const price = randomNumber(50, 150); // Generate random price for each book
+      book.price = price; // Store the price in the book object
+      book.img_url = book.cover; // CHANGED: Set img_url equal to cover
+
+      // Create book item HTML (Now using img_url across the board)
       const bookItem = `
         <div class="col-md-3">
           <div class="product-item">
             <figure class="product-style">
-              <img style="height: 380px; width:320px; border-radius: 20px;" src="${book.cover}" alt="Books" class="product-image">
-              <button type="button" class="add-to-cart" data-title="${book.title}" data-cover="${book.cover}" data-price="${price}">Add to Cart</button>
+              <img style="height: 380px; width:320px; border-radius: 20px;" src="${book.img_url}" alt="Books" class="product-image" data-index="${index}">
+              <button type="button" class="add-to-cart" data-title="${book.title}" data-cover="${book.img_url}" data-price="${price}">Add to Cart</button>
             </figure>
             <figcaption>
               <h3>${book.title}</h3>
@@ -28,12 +33,13 @@ fetch(apiURL)
             </figcaption>
           </div>
         </div>`;
-        
+      
+      // Add the book to the page
       productList.innerHTML += bookItem;
     });
 
     // Enable cart functionality and modal popup
-    enableAddToCart();
+    enableAddToCart(books);
     enableImageClickForModal(books);
   })
   .catch((error) => {
@@ -44,15 +50,16 @@ fetch(apiURL)
 function enableImageClickForModal(books) {
   const productImages = document.querySelectorAll(".product-image");
 
-  productImages.forEach((img, index) => {
+  productImages.forEach((img) => {
     img.addEventListener("click", () => {
-      const book = books[index];
+      const index = img.getAttribute("data-index"); // Get the index of the book
+      const book = books[index]; // Get the correct book from the array
 
-      // Set modal elements
-      document.getElementById("modalImage").src = book.cover;
+      // Set modal elements (Now using img_url for the modal image)
+      document.getElementById("modalImage").src = book.img_url; // CHANGED: using img_url for the modal image
       document.getElementById("modalTitle").textContent = book.title;
       document.getElementById("modalAuthor").textContent = book.originalTitle;
-      document.querySelector(".modal-price").textContent = `$${book.price}`;
+      document.querySelector(".modal-price").textContent = `$${book.price}`; // Set the correct price
       
       // Update wishlist button state
       updateWishlistButtonState(book.title);
@@ -61,25 +68,19 @@ function enableImageClickForModal(books) {
       document.getElementById("productModal").style.display = "flex";
       document.getElementById("header-wrap").style.display = "none";
 
-      // Remove existing event listeners for the "Add to Cart" and "Add to Wishlist" buttons
+      // Add functionality to the "Add to Cart" button inside the modal
       const modalAddToCartButton = document.querySelector(".add-to-cart-modal");
+      modalAddToCartButton.onclick = function () {
+        addToCart(book); // Add the specific book to the cart
+        updateCartButtonState(book.title, true);
+      };
+
+      // Add functionality to the "Add to Wishlist" button inside the modal
       const modalWishlistButton = document.querySelector(".wish");
-
-      // **Updated this to ensure unique event listener by cloning buttons**
-      modalAddToCartButton.replaceWith(modalAddToCartButton.cloneNode(true));
-      modalWishlistButton.replaceWith(modalWishlistButton.cloneNode(true));
-
-      // **Add functionality to the "Add to Cart" button inside the modal**
-      document.querySelector(".add-to-cart-modal").addEventListener("click", () => {
-        addToCart(book); // Add to cart when clicked
-        updateCartButtonState(book.title); // Update button state in the main page
-      });
-
-      // **Add functionality to the "Add to Wishlist" button inside the modal**
-      document.querySelector(".wish").addEventListener("click", () => {
-        addToWishlist(book); // Toggle wishlist status
-        updateWishlistButtonState(book.title); // Update wishlist button state
-      });
+      modalWishlistButton.onclick = function () {
+        addToWishlist(book); // Add the specific book to the wishlist
+        updateWishlistButtonState(book.title);
+      };
     });
   });
 
@@ -90,31 +91,21 @@ function enableImageClickForModal(books) {
   });
 }
 
-// Enable "Add to Cart" functionality
-function enableAddToCart() {
+// Enable "Add to Cart" functionality for the main page
+function enableAddToCart(books) {
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
-  addToCartButtons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-      const clickedButton = event.target; // Get the clicked button
-      const title = clickedButton.getAttribute("data-title");
-      const cover = clickedButton.getAttribute("data-cover");
-      const price = clickedButton.getAttribute("data-price"); // Get the price from data-price attribute
+  addToCartButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const book = books[index]; // Get the correct book from the array
 
-      const book = {
-        title: title,
-        cover: cover,
-        price: price,
-        quantity: 1,
-      };
-
-      addToCart(book);
-      updateCartButtonState(clickedButton); // Pass the clicked button to updateCartButtonState
+      addToCart(book); // Add the specific book to the cart
+      updateCartButtonState(book.title, false);
     });
   });
 }
 
-// Add to cart function
+// Add to cart function (using img_url for saving to the cart)
 function addToCart(book) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -125,49 +116,64 @@ function addToCart(book) {
     existingItem.quantity += 1; // Increase the quantity
   } else {
     // If it doesn't exist, add the book to the cart
-    cart.push(book);
+    cart.push({ ...book, quantity: 1, img_url: book.img_url }); // Using img_url for the image in the cart
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 // Update "Add to Cart" button state
-function updateCartButtonState(clickedButton) {
-  clickedButton.classList.add("in-cart");
-  clickedButton.textContent = "In Cart";
-  clickedButton.style.backgroundColor = "green"; // Change the background color
-  clickedButton.style.color = "white"; // Change the text color to white
+function updateCartButtonState(bookTitle, isModal = false) { 
+  const addToCartButtons = document.querySelectorAll(".add-to-cart, .add-to-cart-modal");
+
+  addToCartButtons.forEach((button) => {
+    const buttonTitle = button.getAttribute("data-title");
+    // Only update the button matching the book title
+    if (buttonTitle === bookTitle) {
+      button.classList.add("in-cart");
+      button.textContent = "In Cart";
+      button.style.backgroundColor = "green"; // Change background color
+      button.style.color = "white"; // Change text color to white
+    }
+  });
+
+  if (!isModal) {
+    window.location.href = "#cart"; 
+  }
 }
 
 // Update wishlist button state based on the book title
 function updateWishlistButtonState(bookTitle) {
   const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-  const isInWishlist = wishlist.some(item => item.title === bookTitle);
+  const isInWishlist = wishlist.some((item) => item.title === bookTitle);
 
-  const wishlistButton = document.getElementById('addToWishlistButton');
+  const wishlistButton = document.getElementById("addToWishlistButton");
   if (isInWishlist) {
-    wishlistButton.querySelector('i').classList.remove('bi-suit-heart');
-    wishlistButton.querySelector('i').classList.add('bi-heart-fill');
+    wishlistButton.querySelector("i").classList.remove("bi-suit-heart");
+    wishlistButton.querySelector("i").classList.add("bi-heart-fill");
   } else {
-    wishlistButton.querySelector('i').classList.remove('bi-heart-fill');
-    wishlistButton.querySelector('i').classList.add('bi-suit-heart');
+    wishlistButton.querySelector("i").classList.remove("bi-heart-fill");
+    wishlistButton.querySelector("i").classList.add("bi-suit-heart");
   }
 }
 
-// Add to Wishlist functionality
+// Add to Wishlist functionality (using img_url for saving to the wishlist)
 function addToWishlist(book) {
-  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
   // Check if the book already exists in the wishlist
-  const existingItem = wishlist.find(item => item.title === book.title);
+  const existingItem = wishlist.find((item) => item.title === book.title);
 
   if (existingItem) {
     // If the book is in the wishlist, remove it
-    wishlist = wishlist.filter(item => item.title !== book.title);
+    wishlist = wishlist.filter((item) => item.title !== book.title);
   } else {
     // If it doesn't exist, add it to the wishlist
-    wishlist.push(book);
+    wishlist.push({ 
+      ...book, 
+      img_url: book.img_url // Using img_url for the image in the wishlist
+    });
   }
 
-  localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
 }

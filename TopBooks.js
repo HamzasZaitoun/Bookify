@@ -23,6 +23,7 @@ function displayTopBooks(books) {
                 <figcaption>
                     <h3>${book.title}</h3>
                     <span>${book.author}</span>
+                        <p  style="display: none; font-size: 15px;">${book.description}</p>
                     <div class="item-price">$${book.price.toFixed(2)}</div>
                 </figcaption>
             </div>

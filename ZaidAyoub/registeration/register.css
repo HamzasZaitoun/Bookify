@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #c9d6ff;
+  background-color: rgba(174, 172, 172, 0.1) ;
   background-image: url("bookbg.png");
   background-repeat: no-repeat;
 
@@ -22,6 +22,7 @@ body {
 }
 
 .container {
+  /* opacity: 0.95; */
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -169,7 +170,7 @@ body {
 .toggle {
   background-color: #caad92;
   height: 100%;
-  background: linear-gradient(to right, #edebe4, #caad92);
+  background: linear-gradient(to right, #caad92, #caad92);
   color: #fff;
   position: relative;
   left: -100%;

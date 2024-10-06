@@ -8,6 +8,7 @@ var modalAuthor = document.getElementById("modalAuthor");
 var modalPrice = document.querySelector(".modal-price");
 var closeModal = document.querySelector(".close");
 var headerWrap = document.getElementById("header-wrap");
+var modalDescription = document.getElementById("modalDescription");
 
 // Function to handle adding items to cart, merging duplicates
 function addToCart(book) {
@@ -87,7 +88,8 @@ fetch("./AsmaMarar/books.json")
         let romanceBooksHTML = '';
 
         // Iterate through the books and create HTML for each section
-        for (let i = 0; i < books.length; i++) {
+        for  (let i = 0; i < books.length; i++) {
+
             const bookHTML = `
                 <div class="col-md-3">
                     <div class="product-itemf">
@@ -108,7 +110,8 @@ fetch("./AsmaMarar/books.json")
                         <figcaption>
                             <h3>${books[i].title}</h3>
                             <span>${books[i].author}</span>
-                            <div class="item-price">${books[i].price}</div>
+                            <p style="display : none;">${books[i].description}</p>
+                            <div class="item-price">$${books[i].price}</div>
                         </figcaption>
                     </div>
                 </div>
@@ -154,7 +157,7 @@ fetch("./AsmaMarar/books.json")
                     title: productItem.querySelector('h3').textContent,
                     author: productItem.querySelector('span').textContent,
                     price: parseFloat(productItem.querySelector('.item-price').textContent.replace('$', '')),
-                    image: productItem.querySelector('.product-image').src
+                    image: productItem.querySelector('.product-image').src,
                 };
                 addToCart(book);
             }
@@ -167,6 +170,8 @@ fetch("./AsmaMarar/books.json")
                 modalTitle.textContent = productItem.querySelector('h3').textContent;
                 modalAuthor.textContent = productItem.querySelector('span').textContent;
                 modalPrice.textContent = productItem.querySelector('.item-price').textContent;
+                modalDescription.textContent = productItem.querySelector('p').textContent;
+
 
                 // Check if the book is already in the wishlist
                 const bookTitle = modalTitle.textContent;
@@ -192,7 +197,8 @@ fetch("./AsmaMarar/books.json")
                     title: modalTitle.textContent,
                     author: modalAuthor.textContent,
                     price: parseFloat(modalPrice.textContent.replace('$', '')),
-                    image: modalImg.src
+                    image: modalImg.src,
+                    
                 };
                 addToCart(book);
             }
@@ -204,6 +210,7 @@ fetch("./AsmaMarar/books.json")
                     author: modalAuthor.textContent,
                     price: parseFloat(modalPrice.textContent.replace('$', '')),
                     image: modalImg.src
+                    
                 };
                 addToWishlist(book); // Call the function to add to wishlist
             }
