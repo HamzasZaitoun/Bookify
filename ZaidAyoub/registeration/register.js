@@ -14,12 +14,14 @@ document.getElementById("signup-btn").addEventListener("click", function () {
   const name = document.getElementById("signup-name").value;
   const email = document.getElementById("signup-email").value;
   const password = document.getElementById("signup-password").value;
+  const confirmPassword = document.getElementById("signup-confirm-password").value; // Added confirm password
 
   // Clear previous messages
   clearMessages([
     "signup-name-message",
     "signup-email-message",
     "signup-password-message",
+    "signup-confirm-password-message", // Clear confirm password message
     "signup-success-message",
   ]);
 
@@ -41,7 +43,16 @@ document.getElementById("signup-btn").addEventListener("click", function () {
     return;
   }
 
-  if (name && email && password) {
+  if (password !== confirmPassword) {
+    displayMessage(
+      "signup-confirm-password-message",
+      "Passwords do not match.",
+      "error"
+    );
+    return;
+  }
+
+  if (name && email && password && confirmPassword) {
     localStorage.setItem("userName", name);
     localStorage.setItem("userEmail", email);
     localStorage.setItem("userPassword", password);
@@ -53,6 +64,7 @@ document.getElementById("signup-btn").addEventListener("click", function () {
     document.getElementById("signup-name").value = "";
     document.getElementById("signup-email").value = "";
     document.getElementById("signup-password").value = "";
+    document.getElementById("signup-confirm-password").value = ""; // Clear confirm password
   } else {
     displayMessage(
       "signup-name-message",
@@ -119,3 +131,5 @@ function validatePassword(password) {
   const passwordPattern = /^(?=.*\d{2,})[A-Za-z\d]{8,}$/;
   return passwordPattern.test(password);
 }
+
+// localStorage.clear();
