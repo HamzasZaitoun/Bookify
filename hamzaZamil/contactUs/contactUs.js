@@ -35,10 +35,10 @@ document
   window.addEventListener('load', function () {
     // Get the contact form element
     const contactForm = document.querySelector('.contact-form');
-  
+    
     // Add the fade-in class when the page has loaded
     contactForm.classList.add('fade-in');
   });
   
 
-  
+  localStorage.clear();
