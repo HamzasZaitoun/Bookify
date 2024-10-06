@@ -33,10 +33,10 @@ function displayCartItems() {
     cart.forEach((item, index) => {
         cartContainer.innerHTML += `
             <div class="cart-item d-flex align-items-center mb-4">
-                <img src="${item.image}" alt="${item.title}" style="width: 100px;" class="img-fluid">
+                <img src="${item.image||item.cover}" alt="${item.title}" style="width: 100px;" class="img-fluid">
                 <div class="ms-3">
                     <h5>${item.title}</h5>
-                    <p>${item.author}</p>
+                    <p>${item.author||'Jhon doe'}</p>
                     <p class="fw-bold">$${parseFloat(item.price).toFixed(2)} x ${item.quantity}</p>
                 </div>
                 <button class="btn btn-danger ms-auto" onclick="removeFromCart(${index})">Remove</button>

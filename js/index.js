@@ -110,6 +110,7 @@ function addToWishList(book) {
   const savedBooks = JSON.parse(localStorage.getItem("wishlist")) || [];
   savedBooks.push(book); // Add to the list
   localStorage.setItem("wishlist", JSON.stringify(savedBooks)); // Save updated wish list
+  
 }
 
 // Function to remove a book from the wish list

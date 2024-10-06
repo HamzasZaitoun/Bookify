@@ -210,8 +210,10 @@ fetch("./AsmaMarar/books.json")
                     author: modalAuthor.textContent,
                     price: parseFloat(modalPrice.textContent.replace('$', '')),
                     image: modalImg.src
+                  
                     
-                };
+                    
+                };  
                 addToWishlist(book); // Call the function to add to wishlist
             }
         });
