@@ -23,7 +23,7 @@ fetch(apiURL)
         <div class="col-md-3">
           <div class="product-item">
             <figure class="product-style">
-              <img style="height: 380px; width:320px; border-radius: 20px;" src="${book.img_url}" alt="Books" class="product-image" data-index="${index}">
+              <img style="height: 380px; width:320px; border-radius: 20px; cursor:pointer" src="${book.img_url}" alt="Books" class="product-image" data-index="${index}">
               <button type="button" class="add-to-cart" data-title="${book.title}" data-cover="${book.img_url}" data-price="${price}">Add to Cart</button>
             </figure>
             <figcaption>
