@@ -49,7 +49,7 @@
       $('#header').removeClass("fixed-top");
     }
   }
-
+  
   $(window).scroll(function() {    
     initScrollNav();
   }); 
